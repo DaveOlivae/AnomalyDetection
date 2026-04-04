@@ -1,0 +1,69 @@
+2026-02-20 14:36:35,698:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-20 14:36:35,698:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-20 14:36:35,698:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-20 14:36:35,698:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-20 14:40:51,218:INFO:Initializing load_model()
+2026-02-20 14:40:51,218:INFO:load_model(model_name=../models/knn_model, platform=None, authentication=None, verbose=True)
+2026-02-20 14:40:51,620:WARNING:/home/davideoliveira/.cache/pypoetry/virtualenvs/anomaly-detection-yVVO47jZ-py3.11/lib/python3.11/site-packages/_distutils_hack/__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+
+2026-02-20 14:40:54,650:INFO:Initializing predict_model()
+2026-02-20 14:40:54,650:INFO:predict_model(self=<pycaret.anomaly.oop.AnomalyExperiment object at 0x7f501aa415d0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['A_feed_stream', 'D_feed_stream',
+                                             'E_feed_stream',
+                                             'Total_fresh_feed_stripper',
+                                             'Recycle_flow_into_rxtr',
+                                             'Reactor_feed_rate',
+                                             'Reactor_pressure',
+                                             'Reactor_level', 'Reactor_temp',
+                                             'Purge_rate', 'Separator_temp',
+                                             'Separator_level',
+                                             'Separator_pressure',
+                                             'Separator_under...
+                                             'Composition_of_E_rxtr_feed',
+                                             'Composition_of_F_rxtr_feed',
+                                             'Composition_of_A_purge',
+                                             'Composition_of_B_purge', ...],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('trained_model', KNN(contamination=0.05, n_jobs=-1))]), ml_usecase=None)
+2026-02-20 14:40:54,650:INFO:Set up data.
+2026-02-23 10:58:26,404:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-23 10:58:26,404:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-23 10:58:26,404:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-23 10:58:26,404:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-23 10:59:06,118:WARNING:/home/davideoliveira/.cache/pypoetry/virtualenvs/anomaly-detection-yVVO47jZ-py3.11/lib/python3.11/site-packages/sklearn/base.py:486: UserWarning: X has feature names, but NearestNeighbors was fitted without feature names
+  warnings.warn(
+
+2026-02-23 11:04:50,952:WARNING:/home/davideoliveira/.cache/pypoetry/virtualenvs/anomaly-detection-yVVO47jZ-py3.11/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2026-02-23 11:04:51,474:WARNING:/home/davideoliveira/.cache/pypoetry/virtualenvs/anomaly-detection-yVVO47jZ-py3.11/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2026-02-23 11:04:51,714:WARNING:/home/davideoliveira/.cache/pypoetry/virtualenvs/anomaly-detection-yVVO47jZ-py3.11/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2026-02-23 11:04:51,950:WARNING:/home/davideoliveira/.cache/pypoetry/virtualenvs/anomaly-detection-yVVO47jZ-py3.11/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2026-02-23 11:13:33,210:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-23 11:13:33,210:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-23 11:13:33,210:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-02-23 11:13:33,210:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
