@@ -1,0 +1,23 @@
+[tool.poetry]
+
+name = "anomaly-detection"
+version = "0.1.0"
+description = "Projeto de detecção de anomalias"
+authors = ["Davi"]
+readme = "README.md"
+packages = [{ include = "src" }]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+
+numpy = "^1.26"
+pandas = "<2.2"
+scikit-learn = "^1.4"
+
+pycaret = "^3.3"
+
+matplotlib = "<3.8"
+seaborn = "^0.13"
+
+jupyter = "^1.0"
+ipykernel = "^6.29"
