@@ -49,7 +49,6 @@ print(f"Lendo modelo de {MODEL_PATH}...")
 model = joblib.load(MODEL_PATH)
 
 # Carregando dados de teste (limitando simulações se necessário para poupar RAM)
-# No teste, o TEP tem 500 sims. Vamos carregar uma parte representativa para o report.
 print("Processando dados de teste...")
 X_test_norm, y_test_norm = get_windows_generator('tep_normal_test.csv', is_faulty=False, n_sims=50)
 X_test_fault, y_test_fault = get_windows_generator('tep_faulty_test.csv', is_faulty=True, n_sims=10)
