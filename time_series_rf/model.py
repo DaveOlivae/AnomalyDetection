@@ -2,11 +2,22 @@ import joblib
 from pathlib import Path
 import pandas as pd
 import numpy as np
-from sklearn.ensemble import RandomForestClassifier
 from sklearn.utils import shuffle
 from sklearn.metrics import f1_score, classification_report
 import gc
 import os
+from sklearn.linear_model import LogisticRegression, RidgeClassifier, SGDClassifier
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import (
+    RandomForestClassifier,
+    ExtraTreesClassifier,
+    GradientBoostingClassifier,
+    AdaBoostClassifier
+)
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.svm import SVC
+from sklearn.neural_network import MLPClassifier
+
 
 # --- CONFIGURAÇÕES ---
 WINDOW_SIZE = 20
@@ -24,6 +35,25 @@ if not MODELS_DIR.exists():
     MODELS_DIR.mkdir(parents=True)
 
 MODEL_NAME = "Rnd_Forest_TS_Bin.pkl"
+
+CLASSIFICATION_MODELS = {
+    # Lineares
+    "Logistic":      LogisticRegression(max_iter=1000, random_state=42),
+    "Ridge":         RidgeClassifier(alpha=1.0),
+    "SGD":           SGDClassifier(loss="log_loss", random_state=42),
+
+    # Árvores
+    "DecisionTree":  DecisionTreeClassifier(random_state=42),
+    "RandomForest":  RandomForestClassifier(n_estimators=100, random_state=42, n_jobs=-1),
+    "ExtraTrees":    ExtraTreesClassifier(n_estimators=100, random_state=42, n_jobs=-1),
+    "GradientBoost": GradientBoostingClassifier(n_estimators=100, random_state=42),
+    "AdaBoost":      AdaBoostClassifier(n_estimators=100, random_state=42),
+
+    # Outros
+    "KNN":           KNeighborsClassifier(n_neighbors=5),
+    "SVC":           SVC(kernel="rbf", probability=True),  # probability=True se quiser predict_proba
+    "MLP":           MLPClassifier(hidden_layer_sizes=(100, 50), max_iter=500, random_state=42),
+}
 
 
 def get_memory_safe_windows(file_path, window_size=WINDOW_SIZE, is_faulty=False, sim_ids_to_keep=None):
@@ -146,28 +176,43 @@ gc.collect()
 print("\nEmbaralhando dataset de treino...")
 X_train, y_train = shuffle(X_train, y_train, random_state=RAND_SEED)
 
-# 6. Treinamento
-print(f"\nTreinando Random Forest (Total Train Windows: {X_train.shape[0]})...")
-rf = RandomForestClassifier(
-    n_estimators=100,
-    max_samples=0.5, # RAM Save
-    max_features='sqrt',
-    n_jobs=N_JOBS,
-    random_state=RAND_SEED,
-    verbose=1
-)
-rf.fit(X_train, y_train)
+for model_name, model in CLASSIFICATION_MODELS.items():
 
-# 7. Avaliação Rápida na VALIDAÇÃO
-print("\n--- Avaliação no Conjunto de VALIDAÇÃO (Hold-out) ---")
-y_val_pred = rf.predict(X_val)
-print(classification_report(y_val, y_val_pred, target_names=['Normal', 'Falha']))
-v_f1 = f1_score(y_val, y_val_pred)
-print(f"F1-Score na Validação: {v_f1:.4f}")
+    print(f"\n==============================")
+    print(f"Treinando modelo: {model_name}")
+    print(f"Total Train Windows: {X_train.shape[0]}")
+    print(f"==============================")
 
-# 8. Salvar Modelo
-save_path = MODELS_DIR / MODEL_NAME
-print(f"\nSalvando modelo em: {save_path}")
-joblib.dump(rf, save_path)
+    # Caso especial: RandomForest com config custom (igual tu tinha)
+    if model_name == "RandomForest":
+        model.set_params(
+            n_estimators=100,
+            max_samples=0.5,   # RAM save
+            max_features='sqrt',
+            n_jobs=N_JOBS,
+            random_state=RAND_SEED,
+            verbose=1
+        )
 
-print("\nFim do treinamento e validação.")
+    # (Opcional) garantir random_state onde existir
+    if hasattr(model, "random_state"):
+        model.set_params(random_state=RAND_SEED)
+
+    # Treinamento
+    model.fit(X_train, y_train)
+
+    # Avaliação
+    print("\n--- Avaliação no Conjunto de VALIDAÇÃO (Hold-out) ---")
+    y_val_pred = model.predict(X_val)
+
+    print(classification_report(y_val, y_val_pred, target_names=['Normal', 'Falha']))
+
+    v_f1 = f1_score(y_val, y_val_pred)
+    print(f"F1-Score na Validação: {v_f1:.4f}")
+
+    # Salvar modelo (nome único por modelo)
+    save_path = MODELS_DIR / f"{model_name}"
+    print(f"\nSalvando modelo em: {save_path}")
+    joblib.dump(model, save_path)
+
+print("\nFim do treinamento de todos os modelos.")
