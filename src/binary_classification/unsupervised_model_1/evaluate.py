@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from pycaret.anomaly import load_model, predict_model
 from sklearn.metrics import confusion_matrix, roc_curve, auc, f1_score, precision_score, recall_score, precision_recall_curve
-from unsupervised_model_1.process import RAW_PATH, PROCESSED_PATH, rename_columns, drop_unnecessary_columns
+from src.binary_classification.unsupervised_model_1.process import RAW_PATH, PROCESSED_PATH, rename_columns, drop_unnecessary_columns
 import os
 import gc 
 import numpy as np

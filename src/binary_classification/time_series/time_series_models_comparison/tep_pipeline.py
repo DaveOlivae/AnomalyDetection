@@ -190,7 +190,9 @@ def build_windows(
     Itera sobre cada série temporal (simulationRun × faultNumber) e gera janelas.
     Simulações nunca são quebradas entre treino e teste.
     """
+
     print(f"\n  Gerando janelas [{desc}]  (window={window}, stride={stride}) ...")
+
     Xs, ys = [], []
 
     # Agrupa por (simulationRun, faultNumber) — cada grupo é uma série temporal

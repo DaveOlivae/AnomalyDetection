@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report, confusion_matrix, ConfusionMatrixDisplay
 import xgboost as xgb
-from data_loading import load_data, DATA_PATH, RAND_SEED
+from src.binary_classification.supervised_models.supervised_model_1.data_loading import load_data, DATA_PATH, RAND_SEED
 
 MODELS_PATH = "models/"
 RESULTS_PATH = Path("results/")

@@ -6,7 +6,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report, confusion_matrix
 from scipy.stats import chi2
-from unsupervised_model_1.process import PROCESSED_PATH, preprocess
+from src.binary_classification.unsupervised_model_1.process import PROCESSED_PATH, preprocess
 
 
 df_noc = pd.read_csv(PROCESSED_PATH + "TEP_FaultFree_Training_NoFault_Proc.csv",

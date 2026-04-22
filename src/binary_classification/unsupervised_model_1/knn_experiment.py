@@ -6,7 +6,7 @@ from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import NearestNeighbors
 from sklearn.metrics import classification_report, precision_score
-from unsupervised_model_1.evaluate import prepare_test_data, SAMPLE_FRAC
+from src.binary_classification.unsupervised_model_1.evaluate import prepare_test_data, SAMPLE_FRAC
 
 
 print("Carregando dataset...")
