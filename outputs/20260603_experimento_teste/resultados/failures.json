@@ -1,0 +1,4 @@
+{
+  "xgboost": "ImportError('XGBoost is not installed. Install it with: poetry add xgboost')",
+  "lightgbm": "ImportError('LightGBM is not installed. Install it with: poetry add lightgbm')"
+}

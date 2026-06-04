@@ -1,0 +1,64 @@
+2026-06-03 11:50:46,453 | __main__ | INFO | Starting experiment: 20260603_experimento_teste
+2026-06-03 11:50:46,453 | __main__ | INFO | Data directory: /home/davideoliveira/Programming/AIProjects/AnomalyDetection/data/final
+2026-06-03 11:50:46,454 | __main__ | INFO | Output directory: /home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/20260603_experimento_teste
+2026-06-03 11:50:46,454 | __main__ | INFO | Log path: /home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/20260603_experimento_teste/logs/experiment.log
+2026-06-03 11:50:46,454 | src.data_handling.make_dataset | INFO | Loading window dataset from /home/davideoliveira/Programming/AIProjects/AnomalyDetection/data/final/train.npz
+2026-06-03 11:50:46,528 | src.data_handling.make_dataset | INFO | Loaded split successfully | X=(19012, 208) | y=(19012,)
+2026-06-03 11:50:46,601 | src.data_handling.make_dataset | INFO | Loading window dataset from /home/davideoliveira/Programming/AIProjects/AnomalyDetection/data/final/val.npz
+2026-06-03 11:50:46,619 | src.data_handling.make_dataset | INFO | Loaded split successfully | X=(4268, 208) | y=(4268,)
+2026-06-03 11:50:46,636 | src.data_handling.make_dataset | INFO | Loading window dataset from /home/davideoliveira/Programming/AIProjects/AnomalyDetection/data/final/test.npz
+2026-06-03 11:50:46,729 | src.data_handling.make_dataset | INFO | Loaded split successfully | X=(22680, 208) | y=(22680,)
+2026-06-03 11:50:46,836 | __main__ | INFO | Train: X=(19012, 208) | y=(19012,)
+2026-06-03 11:50:46,836 | __main__ | INFO | Validation: X=(4268, 208) | y=(4268,)
+2026-06-03 11:50:46,836 | __main__ | INFO | Test: X=(22680, 208) | y=(22680,)
+2026-06-03 11:50:46,836 | __main__ | INFO | Saved experiment config: /home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/20260603_experimento_teste/resultados/experiment_config.json
+2026-06-03 11:50:46,836 | __main__ | INFO | Training model: logistic
+2026-06-03 11:50:49,417 | __main__ | INFO | Finished logistic in 1.46 seconds | validation_f1=0.8220 | test_f1=0.7639 | model=/home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/20260603_experimento_teste/models/logistic.joblib
+2026-06-03 11:50:49,417 | __main__ | INFO | Training model: sgd
+2026-06-03 11:50:51,169 | __main__ | INFO | Finished sgd in 0.67 seconds | validation_f1=0.8170 | test_f1=0.7614 | model=/home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/20260603_experimento_teste/models/sgd.joblib
+2026-06-03 11:50:51,169 | __main__ | INFO | Training model: linear_svm
+2026-06-03 11:51:00,581 | __main__ | INFO | Finished linear_svm in 8.05 seconds | validation_f1=0.8250 | test_f1=0.7661 | model=/home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/20260603_experimento_teste/models/linear_svm.joblib
+2026-06-03 11:51:00,581 | __main__ | INFO | Training model: random_forest
+2026-06-03 11:51:17,364 | __main__ | INFO | Finished random_forest in 14.55 seconds | validation_f1=0.8653 | test_f1=0.7974 | model=/home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/20260603_experimento_teste/models/random_forest.joblib
+2026-06-03 11:51:17,364 | __main__ | INFO | Training model: extra_trees
+2026-06-03 11:51:25,624 | __main__ | INFO | Finished extra_trees in 5.99 seconds | validation_f1=0.8603 | test_f1=0.7929 | model=/home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/20260603_experimento_teste/models/extra_trees.joblib
+2026-06-03 11:51:25,624 | __main__ | INFO | Training model: mlp
+2026-06-03 11:53:26,951 | __main__ | INFO | Finished mlp in 114.89 seconds | validation_f1=0.8086 | test_f1=0.7505 | model=/home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/20260603_experimento_teste/models/mlp.joblib
+2026-06-03 11:53:26,952 | __main__ | INFO | Training model: xgboost
+2026-06-03 11:53:26,952 | __main__ | ERROR | Model xgboost failed and will be skipped.
+Traceback (most recent call last):
+  File "/home/davideoliveira/Programming/AIProjects/AnomalyDetection/src/experiments/20260603_experimento_teste.py", line 189, in main
+    model = build_pipeline(model_name)
+  File "/home/davideoliveira/Programming/AIProjects/AnomalyDetection/src/experiments/20260603_experimento_teste.py", line 136, in build_pipeline
+    estimator = build_model(model_name, RANDOM_STATE)
+  File "/home/davideoliveira/Programming/AIProjects/AnomalyDetection/src/experiments/20260603_experimento_teste.py", line 65, in build_model
+    raise ImportError("XGBoost is not installed. Install it with: poetry add xgboost")
+ImportError: XGBoost is not installed. Install it with: poetry add xgboost
+2026-06-03 11:53:26,953 | __main__ | INFO | Training model: lightgbm
+2026-06-03 11:53:26,953 | __main__ | ERROR | Model lightgbm failed and will be skipped.
+Traceback (most recent call last):
+  File "/home/davideoliveira/Programming/AIProjects/AnomalyDetection/src/experiments/20260603_experimento_teste.py", line 189, in main
+    model = build_pipeline(model_name)
+  File "/home/davideoliveira/Programming/AIProjects/AnomalyDetection/src/experiments/20260603_experimento_teste.py", line 136, in build_pipeline
+    estimator = build_model(model_name, RANDOM_STATE)
+  File "/home/davideoliveira/Programming/AIProjects/AnomalyDetection/src/experiments/20260603_experimento_teste.py", line 82, in build_model
+    raise ImportError("LightGBM is not installed. Install it with: poetry add lightgbm")
+ImportError: LightGBM is not installed. Install it with: poetry add lightgbm
+2026-06-03 11:53:26,954 | __main__ | WARNING | Some models failed. Details saved to /home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/20260603_experimento_teste/resultados/failures.json
+2026-06-03 11:53:27,013 | __main__ | INFO | Validation summary:
+               accuracy  balanced_accuracy  precision  recall      f1  roc_auc  average_precision  train_time_seconds
+random_forest    0.8906             0.8808     0.9823  0.7732  0.8653   0.8854             0.9170             14.5505
+extra_trees      0.8882             0.8773     0.9959  0.7572  0.8603   0.8788             0.9145              5.9928
+linear_svm       0.8578             0.8478     0.9359  0.7376  0.8250   0.8504             0.8931              8.0517
+logistic         0.8547             0.8450     0.9275  0.7381  0.8220   0.8485             0.8919              1.4618
+sgd              0.8498             0.8405     0.9155  0.7376  0.8170   0.8473             0.8905              0.6653
+mlp              0.8482             0.8363     0.9467  0.7057  0.8086   0.8775             0.9043            114.8950
+2026-06-03 11:53:27,018 | __main__ | INFO | Test summary:
+               accuracy  balanced_accuracy  precision  recall      f1  roc_auc  average_precision  train_time_seconds
+random_forest    0.8269             0.8269     0.9616  0.6810  0.7974   0.8460             0.8935             14.5505
+extra_trees      0.8278             0.8278     0.9942  0.6594  0.7929   0.8363             0.8896              5.9928
+linear_svm       0.7989             0.7989     0.9149  0.6590  0.7661   0.8191             0.8761              8.0517
+logistic         0.7956             0.7956     0.9045  0.6611  0.7639   0.8170             0.8747              1.4618
+sgd              0.7920             0.7920     0.8929  0.6637  0.7614   0.8198             0.8757              0.6653
+mlp              0.7933             0.7933     0.9466  0.6218  0.7505   0.8224             0.8740            114.8950
+2026-06-03 11:53:27,018 | __main__ | INFO | Experiment finished successfully.

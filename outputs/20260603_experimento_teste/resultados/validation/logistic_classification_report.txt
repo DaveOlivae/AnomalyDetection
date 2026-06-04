@@ -1,0 +1,17 @@
+              precision    recall  f1-score   support
+
+      Normal     0.8135    0.9519    0.8773      2328
+       Fault     0.9275    0.7381    0.8220      1940
+
+    accuracy                         0.8547      4268
+   macro avg     0.8705    0.8450    0.8497      4268
+weighted avg     0.8653    0.8547    0.8522      4268
+
+
+accuracy: 0.854733
+balanced_accuracy: 0.845017
+precision: 0.927461
+recall: 0.738144
+f1: 0.822044
+roc_auc: 0.848506
+average_precision: 0.891928
