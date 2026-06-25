@@ -1,0 +1,18 @@
+{
+  "best_score": 0.9636220521844525,
+  "best_params": {
+    "n_estimators": 798,
+    "learning_rate": 0.10634551266374369,
+    "max_depth": 5,
+    "subsample": 0.9682679846033496,
+    "colsample_bytree": 0.767812132017745,
+    "reg_alpha": 0.008464188343830304,
+    "reg_lambda": 0.006113763603077504,
+    "min_child_weight": 5,
+    "gamma": 0.005346087007758668
+  },
+  "best_trial": 11,
+  "scoring": "f1",
+  "n_trials_completed": 12,
+  "search_time_seconds": 189.7415792942047
+}

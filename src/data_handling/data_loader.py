@@ -10,7 +10,7 @@ import pandas as pd
 import logging
 from pathlib import Path
 from typing import Iterable, Optional
-from configs.tep_config import TEPDatasetPaths, TEPWindowConfig
+from configs.tep_config import TEPDatasetPaths, TEPWindowConfig, TEPConfig
 
 
 logger = logging.getLogger(__name__)
@@ -66,8 +66,8 @@ def choose_simulations(path: Path, n_sims: Optional[int], rng: np.random.Generat
 
 def load_selected_simulations(
     path: Path,
-    label: int,
     sim_ids: Iterable[int],
+    label: int = None,
     chunksize: int = 200_000,
 ) -> pd.DataFrame:
     """
@@ -104,7 +104,9 @@ def load_selected_simulations(
         raise ValueError(f"No rows found in {path} for selected simulations.")
 
     df = pd.concat(chunks, ignore_index=True)
-    df["label"] = label
+
+    if label != None:
+        df["label"] = label
 
     logger.info(
         "Loaded %d rows from %s",
@@ -204,7 +206,7 @@ def infer_feature_columns(df: pd.DataFrame, meta_cols: Iterable[str]) -> list[st
 
 def load_binary_trainval_test(
     df_paths: TEPDatasetPaths = TEPDatasetPaths(),
-    cfg: TEPWindowConfig = TEPWindowConfig(),
+    cfg: TEPWindowConfig | TEPConfig = TEPWindowConfig(),
 ) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, list[str]]:
     """
     Loads the TEP dataset from the specified paths, samples the specified number of simulations for training and testing,
@@ -223,8 +225,8 @@ def load_binary_trainval_test(
     ff_train_ids = choose_simulations(df_paths.ff_train, cfg.n_ff_train, rng)
     fa_train_ids = choose_simulations(df_paths.fa_train, cfg.n_fa_train, rng)
 
-    ff_train = load_selected_simulations(df_paths.ff_train, 0, ff_train_ids, cfg.chunksize)
-    fa_train = load_selected_simulations(df_paths.fa_train, 1, fa_train_ids, cfg.chunksize)
+    ff_train = load_selected_simulations(path=df_paths.ff_train, label=0, sim_ids=ff_train_ids, chunksize=cfg.chunksize)
+    fa_train = load_selected_simulations(path=df_paths.fa_train, label=1, sim_ids=fa_train_ids, chunksize=cfg.chunksize)
 
     trainval_df = pd.concat([ff_train, fa_train], ignore_index=True)
 
@@ -252,8 +254,8 @@ def load_binary_trainval_test(
     ff_test_ids = choose_simulations(df_paths.ff_test, cfg.n_ff_test, rng)
     fa_test_ids = choose_simulations(df_paths.fa_test, cfg.n_fa_test, rng)
 
-    ff_test = load_selected_simulations(df_paths.ff_test, 0, ff_test_ids, cfg.chunksize)
-    fa_test = load_selected_simulations(df_paths.fa_test, 1, fa_test_ids, cfg.chunksize)
+    ff_test = load_selected_simulations(path=df_paths.ff_test, label=0, sim_ids=ff_test_ids, chunksize=cfg.chunksize)
+    fa_test = load_selected_simulations(path=df_paths.fa_test, label=1, sim_ids=fa_test_ids, chunksize=cfg.chunksize)
 
     test_df = pd.concat([ff_test, fa_test], ignore_index=True)
 

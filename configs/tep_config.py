@@ -35,6 +35,25 @@ class TEPDatasetPaths:
 
 
 @dataclass
+class TEPConfig:
+    """
+    Dataclass containing all the parameters related to
+    loading and processing the TEP dataset. 
+    """
+
+    # copies of the TEP_META_COLS list to avoid mutable 
+    # default argument issues
+    meta_cols: list[str] = field(default_factory=lambda: list(TEP_META_COLS))
+    n_ff_train: int = 120
+    n_fa_train: int = 6
+    n_ff_test: int = 60
+    n_fa_test: int = 3
+    val_ratio: float = 0.2
+    random_state: int = settings.RANDOM_STATE
+    chunksize: int = 200_000
+
+
+@dataclass
 class TEPWindowConfig:
     """
     Dataclass containing all the parameters related to

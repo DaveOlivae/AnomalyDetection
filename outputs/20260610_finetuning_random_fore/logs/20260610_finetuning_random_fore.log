@@ -1,0 +1,18 @@
+2026-06-11 13:28:26,415 | __main__ | INFO | Starting FAST experiment: 20260610_finetuning_random_fore
+2026-06-11 13:28:26,415 | __main__ | INFO | Trials: 8 | CV: 2-fold | Subsample: 20000
+2026-06-11 13:28:26,415 | src.data_handling.make_dataset | INFO | Loading window dataset from /home/davideoliveira/Programming/AIProjects/AnomalyDetection/data/final/train.npz
+2026-06-11 13:28:26,498 | src.data_handling.make_dataset | INFO | Loaded split successfully | X=(19012, 208) | y=(19012,)
+2026-06-11 13:28:26,585 | src.data_handling.make_dataset | INFO | Loading window dataset from /home/davideoliveira/Programming/AIProjects/AnomalyDetection/data/final/val.npz
+2026-06-11 13:28:26,612 | src.data_handling.make_dataset | INFO | Loaded split successfully | X=(4268, 208) | y=(4268,)
+2026-06-11 13:28:26,638 | src.data_handling.make_dataset | INFO | Loading window dataset from /home/davideoliveira/Programming/AIProjects/AnomalyDetection/data/final/test.npz
+2026-06-11 13:28:26,736 | src.data_handling.make_dataset | INFO | Loaded split successfully | X=(22680, 208) | y=(22680,)
+2026-06-11 13:28:26,832 | __main__ | INFO | Train: X=(19012, 208) | y=(19012,)
+2026-06-11 13:28:26,832 | __main__ | INFO | Validation: X=(4268, 208) | y=(4268,)
+2026-06-11 13:28:26,832 | __main__ | INFO | Test: X=(22680, 208) | y=(22680,)
+2026-06-11 13:28:26,833 | __main__ | INFO | Running Optuna study...
+2026-06-11 13:30:44,850 | __main__ | INFO | Search done in 2.3 min
+2026-06-11 13:30:44,861 | __main__ | INFO | Saved trials: /home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/20260610_finetuning_random_fore/reports/optuna_trials.csv
+2026-06-11 13:30:44,862 | __main__ | INFO | Retraining on full training set (19012 samples)...
+2026-06-11 13:31:11,993 | __main__ | INFO | Finished in 2.8 min | best_cv_f1=0.8881 | val_f1=0.8606 | test_f1=0.7937
+2026-06-11 13:31:11,993 | __main__ | INFO | Saved model: /home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/20260610_finetuning_random_fore/models/random_forest_best.joblib
+2026-06-11 13:31:11,993 | __main__ | INFO | Saved study: /home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/20260610_finetuning_random_fore/models/random_forest_optuna_study.joblib

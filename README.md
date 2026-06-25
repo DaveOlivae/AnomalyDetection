@@ -16,12 +16,24 @@ O Dataset contém dados "fault-free" (Operação normal) e "faulty" (Contém 20 
 
 Logo, temos 4 arquivos .RData: FaultFree_Testing, FaultFree_Training, Faulty_Testing e Faulty_Training
 
+O dataset é dividido por simulações, cada simulação consiste de uma amostragem diferente, ou seja, é uma série temporal diferente
+
 #### Treino
 
 amostras coletadas a cada 3 min por 25 horas (500 amostras)
 
 **Fault-Free Training Length:** 250,000 lines
-**Faulty Training Length:** 5,000,000 lines (250,000 por falta, em cada simulacao ha 500 samples de cada falha)
+**Faulty Training Length:** 5,000,000 lines 
+
+Nos datasets de treino nós temos
+
+**#simulacoes_ff** = 500
+
+**#amostras_por_sim_ff** = 500
+
+**#simulacoes_fa** = 500
+
+**#amostras_por_sim_fa** = 10_000   (em cada sim temos 500 amostras por falha, como temos 20 falhas: 20 falhas x 500 amostras = 10_000)
 
 #### Teste
 

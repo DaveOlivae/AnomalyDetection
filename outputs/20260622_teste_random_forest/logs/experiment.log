@@ -1,0 +1,76 @@
+2026-06-22 11:45:17,427 | src.data_handling.data_loader | INFO | Loading binary TEP dataset using random_state=42
+2026-06-22 11:45:17,942 | src.data_handling.data_loader | INFO | Selected 120 simulation IDs from 500 available in TEP_FaultFree_Training_Proc.csv.
+2026-06-22 11:45:27,883 | src.data_handling.data_loader | INFO | Selected 6 simulation IDs from 500 available in TEP_Faulty_Training_Proc.csv.
+2026-06-22 11:45:27,883 | src.data_handling.data_loader | INFO | Loading TEP_FaultFree_Training_Proc.csv (120 simulations)
+2026-06-22 11:45:29,514 | src.data_handling.data_loader | INFO | Loaded 60000 rows from TEP_FaultFree_Training_Proc.csv
+2026-06-22 11:45:29,518 | src.data_handling.data_loader | INFO | Loading TEP_Faulty_Training_Proc.csv (6 simulations)
+2026-06-22 11:45:56,349 | src.data_handling.data_loader | INFO | Loaded 60000 rows from TEP_Faulty_Training_Proc.csv
+2026-06-22 11:45:56,361 | src.data_handling.data_loader | INFO | Train/validation dataset shape=(120000, 56)
+2026-06-22 11:45:56,361 | src.data_handling.data_loader | INFO | Identified 52 feature columns
+2026-06-22 11:45:56,361 | src.data_handling.data_loader | INFO | Using 52 feature columns
+2026-06-22 11:45:56,361 | src.data_handling.data_loader | INFO | Splitting dataset into train and validation sets (val_ratio=0.20)
+2026-06-22 11:45:56,371 | src.data_handling.data_loader | INFO | Label 0: 120 simulations -> train=96 val=24
+2026-06-22 11:45:56,390 | src.data_handling.data_loader | INFO | Label 1: 6 simulations -> train=5 val=1
+2026-06-22 11:45:56,411 | src.data_handling.data_loader | INFO | Split complete. Train shape=(98000, 56) | Validation shape=(22000, 56)
+2026-06-22 11:45:56,412 | src.data_handling.data_loader | INFO | Train shape=(98000, 56) | Validation shape=(22000, 56)
+2026-06-22 11:45:57,573 | src.data_handling.data_loader | INFO | Selected 60 simulation IDs from 500 available in TEP_FaultFree_Testing_Proc.csv.
+2026-06-22 11:46:18,905 | src.data_handling.data_loader | INFO | Selected 3 simulation IDs from 500 available in TEP_Faulty_Testing_Proc.csv.
+2026-06-22 11:46:18,905 | src.data_handling.data_loader | INFO | Loading TEP_FaultFree_Testing_Proc.csv (60 simulations)
+2026-06-22 11:46:22,068 | src.data_handling.data_loader | INFO | Loaded 57600 rows from TEP_FaultFree_Testing_Proc.csv
+2026-06-22 11:46:22,068 | src.data_handling.data_loader | INFO | Loading TEP_Faulty_Testing_Proc.csv (3 simulations)
+2026-06-22 11:47:21,635 | src.data_handling.data_loader | INFO | Loaded 57600 rows from TEP_Faulty_Testing_Proc.csv
+2026-06-22 11:47:21,648 | src.data_handling.data_loader | INFO | Test shape=(115200, 56)
+2026-06-22 11:47:21,648 | src.data_handling.data_loader | INFO | Dataset loading pipeline completed successfully
+2026-06-22 11:47:21,673 | root | INFO | X_train Shape: (98000, 52)
+2026-06-22 11:47:21,673 | root | INFO | y_train Shape: (98000,)
+2026-06-22 11:47:21,673 | root | INFO | Training Random Forest...
+2026-06-22 11:49:18,482 | root | INFO | Evaluating Random Forest...
+2026-06-22 11:49:25,349 | root | INFO | Saved model: /home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/20260622_teste_random_forest/models/Random_Forest.joblib
+2026-06-22 11:49:25,349 | root | INFO | Experiment finished.
+2026-06-22 15:32:50,073 | src.data_handling.data_loader | INFO | Loading binary TEP dataset using random_state=42
+2026-06-22 15:32:50,684 | src.data_handling.data_loader | INFO | Selected 120 simulation IDs from 500 available in TEP_FaultFree_Training_Proc.csv.
+2026-06-22 15:33:02,159 | src.data_handling.data_loader | INFO | Selected 6 simulation IDs from 500 available in TEP_Faulty_Training_Proc.csv.
+2026-06-22 15:33:02,160 | src.data_handling.data_loader | INFO | Loading TEP_FaultFree_Training_Proc.csv (120 simulations)
+2026-06-22 15:33:04,308 | src.data_handling.data_loader | INFO | Loaded 60000 rows from TEP_FaultFree_Training_Proc.csv
+2026-06-22 15:33:04,312 | src.data_handling.data_loader | INFO | Loading TEP_Faulty_Training_Proc.csv (6 simulations)
+2026-06-22 15:33:48,397 | src.data_handling.data_loader | INFO | Loaded 60000 rows from TEP_Faulty_Training_Proc.csv
+2026-06-22 15:33:48,418 | src.data_handling.data_loader | INFO | Train/validation dataset shape=(120000, 56)
+2026-06-22 15:33:48,418 | src.data_handling.data_loader | INFO | Identified 52 feature columns
+2026-06-22 15:33:48,419 | src.data_handling.data_loader | INFO | Using 52 feature columns
+2026-06-22 15:33:48,419 | src.data_handling.data_loader | INFO | Splitting dataset into train and validation sets (val_ratio=0.20)
+2026-06-22 15:33:48,432 | src.data_handling.data_loader | INFO | Label 0: 120 simulations -> train=96 val=24
+2026-06-22 15:33:48,456 | src.data_handling.data_loader | INFO | Label 1: 6 simulations -> train=5 val=1
+2026-06-22 15:33:48,484 | src.data_handling.data_loader | INFO | Split complete. Train shape=(98000, 56) | Validation shape=(22000, 56)
+2026-06-22 15:33:48,484 | src.data_handling.data_loader | INFO | Train shape=(98000, 56) | Validation shape=(22000, 56)
+2026-06-22 15:33:49,801 | src.data_handling.data_loader | INFO | Selected 60 simulation IDs from 500 available in TEP_FaultFree_Testing_Proc.csv.
+2026-06-22 15:34:16,290 | src.data_handling.data_loader | INFO | Selected 3 simulation IDs from 500 available in TEP_Faulty_Testing_Proc.csv.
+2026-06-22 15:34:16,291 | src.data_handling.data_loader | INFO | Loading TEP_FaultFree_Testing_Proc.csv (60 simulations)
+2026-06-22 15:34:20,334 | src.data_handling.data_loader | INFO | Loaded 57600 rows from TEP_FaultFree_Testing_Proc.csv
+2026-06-22 15:34:20,335 | src.data_handling.data_loader | INFO | Loading TEP_Faulty_Testing_Proc.csv (3 simulations)
+2026-06-22 15:35:40,470 | src.data_handling.data_loader | INFO | Loaded 57600 rows from TEP_Faulty_Testing_Proc.csv
+2026-06-22 15:35:40,492 | src.data_handling.data_loader | INFO | Test shape=(115200, 56)
+2026-06-22 15:35:40,492 | src.data_handling.data_loader | INFO | Dataset loading pipeline completed successfully
+2026-06-22 15:35:40,494 | src.data_handling.create_windows | INFO | Building windows: mode=stats | window_size=20 | stride=5
+2026-06-22 15:35:40,494 | src.data_handling.create_windows | INFO | Input dataframe shape=(98000, 56)
+2026-06-22 15:35:40,502 | src.data_handling.create_windows | INFO | Found 196 simulation groups
+2026-06-22 15:35:42,623 | src.data_handling.create_windows | INFO | Window dataset shape=(19012, 208)
+2026-06-22 15:35:42,623 | src.data_handling.create_windows | INFO | Generated 19012 windows with 208 features
+2026-06-22 15:35:42,623 | src.data_handling.create_windows | INFO | Class distribution: normal=9312 anomalous=9700
+2026-06-22 15:35:42,624 | src.data_handling.create_windows | INFO | Building windows: mode=stats | window_size=20 | stride=5
+2026-06-22 15:35:42,624 | src.data_handling.create_windows | INFO | Input dataframe shape=(22000, 56)
+2026-06-22 15:35:42,628 | src.data_handling.create_windows | INFO | Found 44 simulation groups
+2026-06-22 15:35:43,138 | src.data_handling.create_windows | INFO | Window dataset shape=(4268, 208)
+2026-06-22 15:35:43,138 | src.data_handling.create_windows | INFO | Generated 4268 windows with 208 features
+2026-06-22 15:35:43,138 | src.data_handling.create_windows | INFO | Class distribution: normal=2328 anomalous=1940
+2026-06-22 15:35:43,138 | src.data_handling.create_windows | INFO | Building windows: mode=stats | window_size=20 | stride=5
+2026-06-22 15:35:43,138 | src.data_handling.create_windows | INFO | Input dataframe shape=(115200, 56)
+2026-06-22 15:35:43,143 | src.data_handling.create_windows | INFO | Found 120 simulation groups
+2026-06-22 15:35:45,637 | src.data_handling.create_windows | INFO | Window dataset shape=(22680, 208)
+2026-06-22 15:35:45,637 | src.data_handling.create_windows | INFO | Generated 22680 windows with 208 features
+2026-06-22 15:35:45,637 | src.data_handling.create_windows | INFO | Class distribution: normal=11340 anomalous=11340
+2026-06-22 15:35:45,638 | root | INFO | Training Random Forest...
+2026-06-22 15:36:04,069 | root | INFO | Evaluating Random Forest...
+2026-06-22 15:36:07,211 | root | INFO | Saved model: /home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/20260622_teste_random_forest/models/Random_Forest.joblib
+2026-06-22 15:36:07,211 | root | INFO | Experiment finished.
+2026-06-22 16:08:17,192 | src.data_handling.data_loader | INFO | Loading binary TEP dataset using random_state=42
+2026-06-22 16:08:17,769 | src.data_handling.data_loader | INFO | Selected 120 simulation IDs from 500 available in TEP_FaultFree_Training_Proc.csv.

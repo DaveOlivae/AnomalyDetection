@@ -1,0 +1,51 @@
+2026-06-04 11:57:11,273 | __main__ | INFO | Starting experiment: 20260603_experimento_teste
+2026-06-04 11:57:11,273 | __main__ | INFO | Data directory: /home/davideoliveira/Programming/AIProjects/AnomalyDetection/data/final
+2026-06-04 11:57:11,273 | __main__ | INFO | Output directory: /home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/20260603_experimento_teste
+2026-06-04 11:57:11,273 | __main__ | INFO | Log path: /home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/20260603_experimento_teste/20260603_experimento_teste.log
+2026-06-04 11:57:11,273 | src.data_handling.make_dataset | INFO | Loading window dataset from /home/davideoliveira/Programming/AIProjects/AnomalyDetection/data/final/train.npz
+2026-06-04 11:57:11,362 | src.data_handling.make_dataset | INFO | Loaded split successfully | X=(19012, 208) | y=(19012,)
+2026-06-04 11:57:11,440 | src.data_handling.make_dataset | INFO | Loading window dataset from /home/davideoliveira/Programming/AIProjects/AnomalyDetection/data/final/val.npz
+2026-06-04 11:57:11,465 | src.data_handling.make_dataset | INFO | Loaded split successfully | X=(4268, 208) | y=(4268,)
+2026-06-04 11:57:11,484 | src.data_handling.make_dataset | INFO | Loading window dataset from /home/davideoliveira/Programming/AIProjects/AnomalyDetection/data/final/test.npz
+2026-06-04 11:57:11,590 | src.data_handling.make_dataset | INFO | Loaded split successfully | X=(22680, 208) | y=(22680,)
+2026-06-04 11:57:11,684 | __main__ | INFO | Train: X=(19012, 208) | y=(19012,)
+2026-06-04 11:57:11,684 | __main__ | INFO | Validation: X=(4268, 208) | y=(4268,)
+2026-06-04 11:57:11,684 | __main__ | INFO | Test: X=(22680, 208) | y=(22680,)
+2026-06-04 11:57:11,684 | __main__ | INFO | Saved experiment config: /home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/reports/experiment_config.json
+2026-06-04 11:57:11,684 | __main__ | INFO | Training model: logistic
+2026-06-04 11:57:15,154 | __main__ | INFO | Finished logistic in 1.91 seconds | validation_f1=0.8210 | test_f1=0.7641 | model=/home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/models/logistic.joblib
+2026-06-04 11:57:15,155 | __main__ | INFO | Training model: sgd
+2026-06-04 11:57:17,184 | __main__ | INFO | Finished sgd in 0.59 seconds | validation_f1=0.8214 | test_f1=0.7583 | model=/home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/models/sgd.joblib
+2026-06-04 11:57:17,184 | __main__ | INFO | Training model: linear_svm
+2026-06-04 11:57:50,042 | __main__ | INFO | Finished linear_svm in 31.27 seconds | validation_f1=0.8255 | test_f1=0.7637 | model=/home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/models/linear_svm.joblib
+2026-06-04 11:57:50,042 | __main__ | INFO | Training model: random_forest
+2026-06-04 11:58:02,551 | __main__ | INFO | Finished random_forest in 10.21 seconds | validation_f1=0.8653 | test_f1=0.7974 | model=/home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/models/random_forest.joblib
+2026-06-04 11:58:02,551 | __main__ | INFO | Training model: extra_trees
+2026-06-04 11:58:10,808 | __main__ | INFO | Finished extra_trees in 6.27 seconds | validation_f1=0.8607 | test_f1=0.7930 | model=/home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/models/extra_trees.joblib
+2026-06-04 11:58:10,808 | __main__ | INFO | Training model: mlp
+2026-06-04 11:58:22,054 | __main__ | INFO | Finished mlp in 9.50 seconds | validation_f1=0.8094 | test_f1=0.7475 | model=/home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/models/mlp.joblib
+2026-06-04 11:58:22,054 | __main__ | INFO | Training model: xgboost
+2026-06-04 11:58:33,920 | __main__ | INFO | Finished xgboost in 10.36 seconds | validation_f1=0.8545 | test_f1=0.7918 | model=/home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/models/xgboost.joblib
+2026-06-04 11:58:33,920 | __main__ | INFO | Training model: lightgbm
+2026-06-04 11:58:44,730 | __main__ | INFO | Finished lightgbm in 8.83 seconds | validation_f1=0.8682 | test_f1=0.8002 | model=/home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/models/lightgbm.joblib
+2026-06-04 11:58:44,753 | __main__ | INFO | Validation summary:
+               accuracy  balanced_accuracy  precision  recall      f1  roc_auc  average_precision  train_time_seconds
+lightgbm         0.8936             0.8834     0.9940  0.7706  0.8682   0.8814             0.9175              8.8254
+random_forest    0.8906             0.8808     0.9823  0.7732  0.8653   0.8854             0.9170             10.2111
+extra_trees      0.8885             0.8776     0.9959  0.7577  0.8607   0.8790             0.9146              6.2686
+xgboost          0.8838             0.8727     0.9912  0.7510  0.8545   0.8738             0.9118             10.3622
+linear_svm       0.8580             0.8481     0.9354  0.7387  0.8255   0.8507             0.8932             31.2727
+sgd              0.8536             0.8442     0.9217  0.7407  0.8214   0.8551             0.8947              0.5896
+logistic         0.8540             0.8442     0.9273  0.7366  0.8210   0.8481             0.8917              1.9117
+mlp              0.8491             0.8371     0.9506  0.7046  0.8094   0.8795             0.9050              9.4974
+2026-06-04 11:58:44,756 | __main__ | INFO | Test summary:
+               accuracy  balanced_accuracy  precision  recall      f1  roc_auc  average_precision  train_time_seconds
+lightgbm         0.8317             0.8317     0.9843  0.6742  0.8002   0.8488             0.8961              8.8254
+random_forest    0.8269             0.8269     0.9616  0.6810  0.7974   0.8460             0.8935             10.2111
+extra_trees      0.8278             0.8278     0.9942  0.6595  0.7930   0.8360             0.8895              6.2686
+xgboost          0.8250             0.8250     0.9777  0.6653  0.7918   0.8453             0.8940             10.3622
+logistic         0.7960             0.7960     0.9056  0.6608  0.7641   0.8173             0.8748              1.9117
+linear_svm       0.7971             0.7971     0.9143  0.6557  0.7637   0.8157             0.8737             31.2727
+sgd              0.7906             0.7906     0.8967  0.6569  0.7583   0.8120             0.8718              0.5896
+mlp              0.7912             0.7912     0.9450  0.6183  0.7475   0.8221             0.8738              9.4974
+2026-06-04 11:58:44,756 | __main__ | INFO | Experiment finished successfully.

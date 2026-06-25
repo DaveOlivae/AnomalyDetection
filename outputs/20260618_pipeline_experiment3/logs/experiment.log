@@ -1,0 +1,35 @@
+2026-06-18 14:50:29,015 | root | INFO | Starting multiclass fault experiment: 20260618_pipeline_experiment3
+2026-06-18 14:50:29,015 | root | INFO | Using faults: (1, 2, 3, 4, 6, 7, 8, 10, 11, 12, 13, 14, 16, 17, 18, 19, 20) | Excluded faults: (5, 9, 15)
+2026-06-18 14:50:38,459 | src.data_handling.data_loader | INFO | Selected 6 simulation IDs from 500 available in TEP_Faulty_Training_Proc.csv.
+2026-06-18 14:50:38,459 | src.data_handling.data_loader | INFO | Loading TEP_Faulty_Training_Proc.csv (6 simulations)
+2026-06-18 14:51:03,444 | src.data_handling.data_loader | INFO | Loaded 60000 rows from TEP_Faulty_Training_Proc.csv
+2026-06-18 14:51:25,089 | src.data_handling.data_loader | INFO | Selected 3 simulation IDs from 500 available in TEP_Faulty_Testing_Proc.csv.
+2026-06-18 14:51:25,089 | src.data_handling.data_loader | INFO | Loading TEP_Faulty_Testing_Proc.csv (3 simulations)
+2026-06-18 14:52:23,644 | src.data_handling.data_loader | INFO | Loaded 57600 rows from TEP_Faulty_Testing_Proc.csv
+2026-06-18 14:52:23,660 | src.data_handling.data_loader | INFO | Identified 52 feature columns
+2026-06-18 14:52:23,661 | src.data_handling.data_loader | INFO | Splitting dataset into train and validation sets (val_ratio=0.20)
+2026-06-18 14:52:23,663 | src.data_handling.data_loader | INFO | Label 1: 6 simulations -> train=5 val=1
+2026-06-18 14:52:23,666 | src.data_handling.data_loader | INFO | Label 2: 6 simulations -> train=5 val=1
+2026-06-18 14:52:23,668 | src.data_handling.data_loader | INFO | Label 3: 6 simulations -> train=5 val=1
+2026-06-18 14:52:23,671 | src.data_handling.data_loader | INFO | Label 4: 6 simulations -> train=5 val=1
+2026-06-18 14:52:23,673 | src.data_handling.data_loader | INFO | Label 6: 6 simulations -> train=5 val=1
+2026-06-18 14:52:23,676 | src.data_handling.data_loader | INFO | Label 7: 6 simulations -> train=5 val=1
+2026-06-18 14:52:23,678 | src.data_handling.data_loader | INFO | Label 8: 6 simulations -> train=5 val=1
+2026-06-18 14:52:23,681 | src.data_handling.data_loader | INFO | Label 10: 6 simulations -> train=5 val=1
+2026-06-18 14:52:23,683 | src.data_handling.data_loader | INFO | Label 11: 6 simulations -> train=5 val=1
+2026-06-18 14:52:23,685 | src.data_handling.data_loader | INFO | Label 12: 6 simulations -> train=5 val=1
+2026-06-18 14:52:23,687 | src.data_handling.data_loader | INFO | Label 13: 6 simulations -> train=5 val=1
+2026-06-18 14:52:23,690 | src.data_handling.data_loader | INFO | Label 14: 6 simulations -> train=5 val=1
+2026-06-18 14:52:23,693 | src.data_handling.data_loader | INFO | Label 16: 6 simulations -> train=5 val=1
+2026-06-18 14:52:23,695 | src.data_handling.data_loader | INFO | Label 17: 6 simulations -> train=5 val=1
+2026-06-18 14:52:23,698 | src.data_handling.data_loader | INFO | Label 18: 6 simulations -> train=5 val=1
+2026-06-18 14:52:23,700 | src.data_handling.data_loader | INFO | Label 19: 6 simulations -> train=5 val=1
+2026-06-18 14:52:23,702 | src.data_handling.data_loader | INFO | Label 20: 6 simulations -> train=5 val=1
+2026-06-18 14:52:23,709 | src.data_handling.data_loader | INFO | Split complete. Train shape=(42500, 55) | Validation shape=(8500, 55)
+2026-06-18 14:52:23,730 | root | INFO | Train: X=(42500, 52) | y=(42500,)
+2026-06-18 14:52:23,730 | root | INFO | Validation: X=(8500, 52) | y=(8500,)
+2026-06-18 14:52:23,730 | root | INFO | Test: X=(48960, 52) | y=(48960,)
+2026-06-18 14:52:23,731 | root | INFO | Training Random Forest...
+2026-06-18 14:52:42,240 | root | INFO | Evaluating Random Forest...
+2026-06-18 14:52:44,693 | root | INFO | Saved model: /home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/20260618_pipeline_experiment3/models/random_forest.joblib
+2026-06-18 14:52:44,694 | root | INFO | Experiment finished.

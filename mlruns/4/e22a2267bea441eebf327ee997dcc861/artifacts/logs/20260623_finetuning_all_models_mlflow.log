@@ -1,0 +1,65 @@
+2026-06-23 20:01:59,422 | __main__ | INFO | Starting experiment: 20260623_finetuning_all_models_mlflow
+2026-06-23 20:01:59,424 | __main__ | INFO | Models to run: ['lightgbm', 'random_forest', 'xgboost']
+2026-06-23 20:01:59,424 | __main__ | INFO | Data directory: /home/davideoliveira/Programming/AIProjects/AnomalyDetection/data/final
+2026-06-23 20:01:59,424 | __main__ | INFO | Output directory: /home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/20260623_finetuning_all_models_mlflow
+2026-06-23 20:01:59,424 | src.data_handling.make_dataset | INFO | Loading window dataset from /home/davideoliveira/Programming/AIProjects/AnomalyDetection/data/final/train.npz
+2026-06-23 20:01:59,513 | src.data_handling.make_dataset | INFO | Loaded split successfully | X=(19012, 208) | y=(19012,)
+2026-06-23 20:01:59,586 | src.data_handling.make_dataset | INFO | Loading window dataset from /home/davideoliveira/Programming/AIProjects/AnomalyDetection/data/final/val.npz
+2026-06-23 20:01:59,606 | src.data_handling.make_dataset | INFO | Loaded split successfully | X=(4268, 208) | y=(4268,)
+2026-06-23 20:01:59,624 | src.data_handling.make_dataset | INFO | Loading window dataset from /home/davideoliveira/Programming/AIProjects/AnomalyDetection/data/final/test.npz
+2026-06-23 20:01:59,722 | src.data_handling.make_dataset | INFO | Loaded split successfully | X=(22680, 208) | y=(22680,)
+2026-06-23 20:01:59,805 | __main__ | INFO | Train: X=(19012, 208) | y=(19012,)
+2026-06-23 20:01:59,805 | __main__ | INFO | Validation: X=(4268, 208) | y=(4268,)
+2026-06-23 20:01:59,805 | __main__ | INFO | Test: X=(22680, 208) | y=(22680,)
+2026-06-23 20:01:59,807 | __main__ | INFO | Saved experiment config: /home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/20260623_finetuning_all_models_mlflow/reports/experiment_config.json
+2026-06-23 20:02:00,109 | __main__ | INFO | ============================================================
+2026-06-23 20:02:00,109 | __main__ | INFO | Starting Optuna finetuning: LIGHTGBM
+2026-06-23 20:02:00,109 | __main__ | INFO | ============================================================
+2026-06-23 20:02:00,168 | __main__ | INFO | [lightgbm] Running Optuna study — 60 trials | 3-fold CV
+2026-06-23 20:13:17,357 | __main__ | INFO | [lightgbm] Saved Optuna trials: /home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/20260623_finetuning_all_models_mlflow/reports/lightgbm/optuna_trials.csv
+2026-06-23 20:13:17,373 | __main__ | INFO | [lightgbm] Saved best params: /home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/20260623_finetuning_all_models_mlflow/reports/lightgbm/best_params.json
+2026-06-23 20:13:17,447 | __main__ | INFO | [lightgbm] Retraining best model on full training set...
+2026-06-23 20:25:30,368 | __main__ | INFO | Starting experiment: 20260623_finetuning_all_models_mlflow
+2026-06-23 20:25:30,368 | __main__ | INFO | Models to run: ['lightgbm', 'random_forest', 'xgboost']
+2026-06-23 20:25:30,368 | __main__ | INFO | Data directory: /home/davideoliveira/Programming/AIProjects/AnomalyDetection/data/final
+2026-06-23 20:25:30,368 | __main__ | INFO | Output directory: /home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/20260623_finetuning_all_models_mlflow
+2026-06-23 20:25:30,368 | src.data_handling.make_dataset | INFO | Loading window dataset from /home/davideoliveira/Programming/AIProjects/AnomalyDetection/data/final/train.npz
+2026-06-23 20:25:30,447 | src.data_handling.make_dataset | INFO | Loaded split successfully | X=(19012, 208) | y=(19012,)
+2026-06-23 20:25:30,520 | src.data_handling.make_dataset | INFO | Loading window dataset from /home/davideoliveira/Programming/AIProjects/AnomalyDetection/data/final/val.npz
+2026-06-23 20:25:30,537 | src.data_handling.make_dataset | INFO | Loaded split successfully | X=(4268, 208) | y=(4268,)
+2026-06-23 20:25:30,554 | src.data_handling.make_dataset | INFO | Loading window dataset from /home/davideoliveira/Programming/AIProjects/AnomalyDetection/data/final/test.npz
+2026-06-23 20:25:30,643 | src.data_handling.make_dataset | INFO | Loaded split successfully | X=(22680, 208) | y=(22680,)
+2026-06-23 20:25:30,731 | __main__ | INFO | Train: X=(19012, 208) | y=(19012,)
+2026-06-23 20:25:30,731 | __main__ | INFO | Validation: X=(4268, 208) | y=(4268,)
+2026-06-23 20:25:30,731 | __main__ | INFO | Test: X=(22680, 208) | y=(22680,)
+2026-06-23 20:25:30,733 | __main__ | INFO | Saved experiment config: /home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/20260623_finetuning_all_models_mlflow/reports/experiment_config.json
+2026-06-23 20:25:31,021 | __main__ | INFO | ============================================================
+2026-06-23 20:25:31,021 | __main__ | INFO | Starting Optuna finetuning: LIGHTGBM
+2026-06-23 20:25:31,021 | __main__ | INFO | ============================================================
+2026-06-23 20:25:31,072 | __main__ | INFO | [lightgbm] Running Optuna study — 60 trials | 3-fold CV
+2026-06-23 20:35:23,625 | __main__ | INFO | [lightgbm] Saved Optuna trials: /home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/20260623_finetuning_all_models_mlflow/reports/lightgbm/optuna_trials.csv
+2026-06-23 20:35:23,642 | __main__ | INFO | [lightgbm] Saved best params: /home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/20260623_finetuning_all_models_mlflow/reports/lightgbm/best_params.json
+2026-06-23 20:35:23,724 | __main__ | INFO | [lightgbm] Retraining best model on full training set...
+2026-06-23 20:35:35,028 | __main__ | INFO | [lightgbm] Done in 592.54 s | best_cv_f1=0.9703 | val_f1=0.8495 | test_f1=0.7868
+2026-06-23 20:35:35,028 | __main__ | INFO | [lightgbm] Saved best model: /home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/20260623_finetuning_all_models_mlflow/models/lightgbm/lightgbm_best.joblib
+2026-06-23 20:35:35,028 | __main__ | INFO | [lightgbm] Saved Optuna study: /home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/20260623_finetuning_all_models_mlflow/models/lightgbm/lightgbm_optuna_study.joblib
+2026-06-23 20:35:35,035 | __main__ | INFO | ============================================================
+2026-06-23 20:35:35,035 | __main__ | INFO | Starting Optuna finetuning: RANDOM_FOREST
+2026-06-23 20:35:35,035 | __main__ | INFO | ============================================================
+2026-06-23 20:35:35,091 | __main__ | INFO | [random_forest] Running Optuna study — 60 trials | 3-fold CV
+2026-06-24 20:15:55,971 | __main__ | INFO | [random_forest] Saved Optuna trials: /home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/20260623_finetuning_all_models_mlflow/reports/random_forest/optuna_trials.csv
+2026-06-24 20:15:55,986 | __main__ | INFO | [random_forest] Saved best params: /home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/20260623_finetuning_all_models_mlflow/reports/random_forest/best_params.json
+2026-06-24 20:15:56,047 | __main__ | INFO | [random_forest] Retraining best model on full training set...
+2026-06-24 20:19:45,925 | __main__ | INFO | [random_forest] Done in 85220.87 s | best_cv_f1=0.9405 | val_f1=0.8561 | test_f1=0.7940
+2026-06-24 20:19:45,925 | __main__ | INFO | [random_forest] Saved best model: /home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/20260623_finetuning_all_models_mlflow/models/random_forest/random_forest_best.joblib
+2026-06-24 20:19:45,925 | __main__ | INFO | [random_forest] Saved Optuna study: /home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/20260623_finetuning_all_models_mlflow/models/random_forest/random_forest_optuna_study.joblib
+2026-06-24 20:19:45,931 | __main__ | INFO | ============================================================
+2026-06-24 20:19:45,931 | __main__ | INFO | Starting Optuna finetuning: XGBOOST
+2026-06-24 20:19:45,931 | __main__ | INFO | ============================================================
+2026-06-24 20:19:45,988 | __main__ | INFO | [xgboost] Running Optuna study — 60 trials | 3-fold CV
+2026-06-24 20:54:36,392 | __main__ | INFO | [xgboost] Saved Optuna trials: /home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/20260623_finetuning_all_models_mlflow/reports/xgboost/optuna_trials.csv
+2026-06-24 20:54:36,412 | __main__ | INFO | [xgboost] Saved best params: /home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/20260623_finetuning_all_models_mlflow/reports/xgboost/best_params.json
+2026-06-24 20:54:36,489 | __main__ | INFO | [xgboost] Retraining best model on full training set...
+2026-06-24 20:55:00,886 | __main__ | INFO | [xgboost] Done in 2090.39 s | best_cv_f1=0.9713 | val_f1=0.8269 | test_f1=0.7634
+2026-06-24 20:55:00,886 | __main__ | INFO | [xgboost] Saved best model: /home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/20260623_finetuning_all_models_mlflow/models/xgboost/xgboost_best.joblib
+2026-06-24 20:55:00,886 | __main__ | INFO | [xgboost] Saved Optuna study: /home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/20260623_finetuning_all_models_mlflow/models/xgboost/xgboost_optuna_study.joblib

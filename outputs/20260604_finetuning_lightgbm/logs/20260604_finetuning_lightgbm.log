@@ -1,0 +1,15 @@
+2026-06-04 13:07:53,160 | __main__ | INFO | Starting LightGBM finetuning: 20260604_finetuning_lightgbm
+2026-06-04 13:07:53,160 | __main__ | INFO | Data directory: /home/davideoliveira/Programming/AIProjects/AnomalyDetection/data/final
+2026-06-04 13:07:53,160 | __main__ | INFO | Output directory: /home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/20260604_finetuning_lightgbm
+2026-06-04 13:07:53,160 | __main__ | INFO | Log path: /home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/20260604_finetuning_lightgbm/logs/20260604_finetuning_lightgbm.log
+2026-06-04 13:07:53,160 | src.data_handling.make_dataset | INFO | Loading window dataset from /home/davideoliveira/Programming/AIProjects/AnomalyDetection/data/final/train.npz
+2026-06-04 13:07:53,271 | src.data_handling.make_dataset | INFO | Loaded split successfully | X=(19012, 208) | y=(19012,)
+2026-06-04 13:07:53,348 | src.data_handling.make_dataset | INFO | Loading window dataset from /home/davideoliveira/Programming/AIProjects/AnomalyDetection/data/final/val.npz
+2026-06-04 13:07:53,364 | src.data_handling.make_dataset | INFO | Loaded split successfully | X=(4268, 208) | y=(4268,)
+2026-06-04 13:07:53,381 | src.data_handling.make_dataset | INFO | Loading window dataset from /home/davideoliveira/Programming/AIProjects/AnomalyDetection/data/final/test.npz
+2026-06-04 13:07:53,468 | src.data_handling.make_dataset | INFO | Loaded split successfully | X=(22680, 208) | y=(22680,)
+2026-06-04 13:07:53,552 | __main__ | INFO | Train: X=(19012, 208) | y=(19012,)
+2026-06-04 13:07:53,553 | __main__ | INFO | Validation: X=(4268, 208) | y=(4268,)
+2026-06-04 13:07:53,553 | __main__ | INFO | Test: X=(22680, 208) | y=(22680,)
+2026-06-04 13:07:53,553 | __main__ | INFO | Saved finetuning config: /home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/20260604_finetuning_lightgbm/reports/experiment_config.json
+2026-06-04 13:07:53,554 | __main__ | INFO | Running random search for 40 candidates with 3-fold CV.

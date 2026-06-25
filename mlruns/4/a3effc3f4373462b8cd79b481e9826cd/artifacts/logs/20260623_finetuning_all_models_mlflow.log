@@ -1,0 +1,14 @@
+2026-06-23 20:01:59,422 | __main__ | INFO | Starting experiment: 20260623_finetuning_all_models_mlflow
+2026-06-23 20:01:59,424 | __main__ | INFO | Models to run: ['lightgbm', 'random_forest', 'xgboost']
+2026-06-23 20:01:59,424 | __main__ | INFO | Data directory: /home/davideoliveira/Programming/AIProjects/AnomalyDetection/data/final
+2026-06-23 20:01:59,424 | __main__ | INFO | Output directory: /home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/20260623_finetuning_all_models_mlflow
+2026-06-23 20:01:59,424 | src.data_handling.make_dataset | INFO | Loading window dataset from /home/davideoliveira/Programming/AIProjects/AnomalyDetection/data/final/train.npz
+2026-06-23 20:01:59,513 | src.data_handling.make_dataset | INFO | Loaded split successfully | X=(19012, 208) | y=(19012,)
+2026-06-23 20:01:59,586 | src.data_handling.make_dataset | INFO | Loading window dataset from /home/davideoliveira/Programming/AIProjects/AnomalyDetection/data/final/val.npz
+2026-06-23 20:01:59,606 | src.data_handling.make_dataset | INFO | Loaded split successfully | X=(4268, 208) | y=(4268,)
+2026-06-23 20:01:59,624 | src.data_handling.make_dataset | INFO | Loading window dataset from /home/davideoliveira/Programming/AIProjects/AnomalyDetection/data/final/test.npz
+2026-06-23 20:01:59,722 | src.data_handling.make_dataset | INFO | Loaded split successfully | X=(22680, 208) | y=(22680,)
+2026-06-23 20:01:59,805 | __main__ | INFO | Train: X=(19012, 208) | y=(19012,)
+2026-06-23 20:01:59,805 | __main__ | INFO | Validation: X=(4268, 208) | y=(4268,)
+2026-06-23 20:01:59,805 | __main__ | INFO | Test: X=(22680, 208) | y=(22680,)
+2026-06-23 20:01:59,807 | __main__ | INFO | Saved experiment config: /home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/20260623_finetuning_all_models_mlflow/reports/experiment_config.json

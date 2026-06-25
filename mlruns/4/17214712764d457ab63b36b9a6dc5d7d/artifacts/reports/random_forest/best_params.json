@@ -1,0 +1,16 @@
+{
+  "best_score": 0.9404858444354863,
+  "best_params": {
+    "n_estimators": 171,
+    "max_depth": 30,
+    "min_samples_split": 4,
+    "min_samples_leaf": 4,
+    "max_features": 0.7,
+    "bootstrap": false,
+    "class_weight": null
+  },
+  "best_trial": 42,
+  "scoring": "f1",
+  "n_trials_completed": 46,
+  "search_time_seconds": 85220.87038898468
+}

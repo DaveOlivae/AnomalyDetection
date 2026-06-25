@@ -1,0 +1,252 @@
+2026-06-18 11:21:01,830 | root | INFO | Picking simulations...
+2026-06-18 11:21:02,412 | src.data_handling.data_loader | INFO | Selected 120 simulation IDs from 500 available in TEP_FaultFree_Training_Proc.csv.
+2026-06-18 11:21:02,412 | root | INFO | Loading the selected simulations...
+2026-06-18 11:21:02,412 | src.data_handling.data_loader | INFO | Loading TEP_FaultFree_Training_Proc.csv (120 simulations)
+2026-06-18 11:21:03,920 | src.data_handling.data_loader | INFO | Loaded 60000 rows from TEP_FaultFree_Training_Proc.csv
+2026-06-18 11:21:03,920 | root | INFO | Done! FF_Train Shape: (60000, 56)
+2026-06-18 11:21:43,930 | root | INFO | Picking simulations...
+2026-06-18 11:21:44,379 | src.data_handling.data_loader | INFO | Selected 120 simulation IDs from 500 available in TEP_FaultFree_Training_Proc.csv.
+2026-06-18 11:21:44,379 | root | INFO | Loading the selected simulations...
+2026-06-18 11:22:27,776 | root | INFO | Picking simulations...
+2026-06-18 11:22:28,227 | src.data_handling.data_loader | INFO | Selected 120 simulation IDs from 500 available in TEP_FaultFree_Training_Proc.csv.
+2026-06-18 11:22:28,227 | root | INFO | Loading the selected simulations...
+2026-06-18 11:22:28,227 | src.data_handling.data_loader | INFO | Loading TEP_FaultFree_Training_Proc.csv (120 simulations)
+2026-06-18 11:22:29,618 | src.data_handling.data_loader | INFO | Loaded 60000 rows from TEP_FaultFree_Training_Proc.csv
+2026-06-18 11:22:29,619 | root | INFO | Done! FF_Train Shape: (60000, 56)
+2026-06-18 11:24:56,856 | root | INFO | Picking simulations...
+2026-06-18 11:24:57,307 | src.data_handling.data_loader | INFO | Selected 120 simulation IDs from 500 available in TEP_FaultFree_Training_Proc.csv.
+2026-06-18 11:24:57,307 | root | INFO | Loading the selected simulations...
+2026-06-18 11:24:57,307 | src.data_handling.data_loader | INFO | Loading TEP_FaultFree_Training_Proc.csv (120 simulations)
+2026-06-18 11:24:58,628 | src.data_handling.data_loader | INFO | Loaded 60000 rows from TEP_FaultFree_Training_Proc.csv
+2026-06-18 11:24:58,629 | root | INFO | Done! FF_Train Shape: (60000, 55)
+2026-06-18 11:31:43,159 | root | INFO | Picking simulations...
+2026-06-18 11:31:54,501 | src.data_handling.data_loader | INFO | Selected 6 simulation IDs from 500 available in TEP_Faulty_Training_Proc.csv.
+2026-06-18 11:31:54,501 | root | INFO | Loading the selected simulations...
+2026-06-18 11:31:54,501 | src.data_handling.data_loader | INFO | Loading TEP_Faulty_Training_Proc.csv (6 simulations)
+2026-06-18 11:32:15,006 | src.data_handling.data_loader | INFO | Loaded 60000 rows from TEP_Faulty_Training_Proc.csv
+2026-06-18 11:32:15,009 | root | INFO | Done! FA_Train Shape: (60000, 55)
+2026-06-18 11:32:15,009 | src.data_handling.data_loader | INFO | Splitting dataset into train and validation sets (val_ratio=0.20)
+2026-06-18 11:32:15,011 | src.data_handling.data_loader | INFO | Label 1: 6 simulations -> train=5 val=1
+2026-06-18 11:32:15,013 | src.data_handling.data_loader | INFO | Label 2: 6 simulations -> train=5 val=1
+2026-06-18 11:32:15,015 | src.data_handling.data_loader | INFO | Label 3: 6 simulations -> train=5 val=1
+2026-06-18 11:32:15,017 | src.data_handling.data_loader | INFO | Label 4: 6 simulations -> train=5 val=1
+2026-06-18 11:32:15,020 | src.data_handling.data_loader | INFO | Label 5: 6 simulations -> train=5 val=1
+2026-06-18 11:32:15,022 | src.data_handling.data_loader | INFO | Label 6: 6 simulations -> train=5 val=1
+2026-06-18 11:32:15,023 | src.data_handling.data_loader | INFO | Label 7: 6 simulations -> train=5 val=1
+2026-06-18 11:32:15,026 | src.data_handling.data_loader | INFO | Label 8: 6 simulations -> train=5 val=1
+2026-06-18 11:32:15,029 | src.data_handling.data_loader | INFO | Label 9: 6 simulations -> train=5 val=1
+2026-06-18 11:32:15,030 | src.data_handling.data_loader | INFO | Label 10: 6 simulations -> train=5 val=1
+2026-06-18 11:32:15,032 | src.data_handling.data_loader | INFO | Label 11: 6 simulations -> train=5 val=1
+2026-06-18 11:32:15,035 | src.data_handling.data_loader | INFO | Label 12: 6 simulations -> train=5 val=1
+2026-06-18 11:32:15,037 | src.data_handling.data_loader | INFO | Label 13: 6 simulations -> train=5 val=1
+2026-06-18 11:32:15,039 | src.data_handling.data_loader | INFO | Label 14: 6 simulations -> train=5 val=1
+2026-06-18 11:32:15,041 | src.data_handling.data_loader | INFO | Label 15: 6 simulations -> train=5 val=1
+2026-06-18 11:32:15,043 | src.data_handling.data_loader | INFO | Label 16: 6 simulations -> train=5 val=1
+2026-06-18 11:32:15,045 | src.data_handling.data_loader | INFO | Label 17: 6 simulations -> train=5 val=1
+2026-06-18 11:32:15,047 | src.data_handling.data_loader | INFO | Label 18: 6 simulations -> train=5 val=1
+2026-06-18 11:32:15,049 | src.data_handling.data_loader | INFO | Label 19: 6 simulations -> train=5 val=1
+2026-06-18 11:32:15,052 | src.data_handling.data_loader | INFO | Label 20: 6 simulations -> train=5 val=1
+2026-06-18 11:32:15,060 | src.data_handling.data_loader | INFO | Split complete. Train shape=(50000, 55) | Validation shape=(10000, 55)
+2026-06-18 11:33:41,675 | root | INFO | Picking simulations...
+2026-06-18 11:33:49,916 | src.data_handling.data_loader | INFO | Selected 6 simulation IDs from 500 available in TEP_Faulty_Training_Proc.csv.
+2026-06-18 11:33:49,916 | root | INFO | Loading the selected simulations...
+2026-06-18 11:33:49,916 | src.data_handling.data_loader | INFO | Loading TEP_Faulty_Training_Proc.csv (6 simulations)
+2026-06-18 11:34:10,294 | src.data_handling.data_loader | INFO | Loaded 60000 rows from TEP_Faulty_Training_Proc.csv
+2026-06-18 11:34:10,299 | root | INFO | Done! FA_Train Shape: (60000, 55)
+2026-06-18 11:34:10,300 | src.data_handling.data_loader | INFO | Splitting dataset into train and validation sets (val_ratio=0.20)
+2026-06-18 11:34:10,302 | src.data_handling.data_loader | INFO | Label 1: 6 simulations -> train=5 val=1
+2026-06-18 11:34:10,304 | src.data_handling.data_loader | INFO | Label 2: 6 simulations -> train=5 val=1
+2026-06-18 11:34:10,306 | src.data_handling.data_loader | INFO | Label 3: 6 simulations -> train=5 val=1
+2026-06-18 11:34:10,308 | src.data_handling.data_loader | INFO | Label 4: 6 simulations -> train=5 val=1
+2026-06-18 11:34:10,310 | src.data_handling.data_loader | INFO | Label 5: 6 simulations -> train=5 val=1
+2026-06-18 11:34:10,312 | src.data_handling.data_loader | INFO | Label 6: 6 simulations -> train=5 val=1
+2026-06-18 11:34:10,314 | src.data_handling.data_loader | INFO | Label 7: 6 simulations -> train=5 val=1
+2026-06-18 11:34:10,316 | src.data_handling.data_loader | INFO | Label 8: 6 simulations -> train=5 val=1
+2026-06-18 11:34:10,319 | src.data_handling.data_loader | INFO | Label 9: 6 simulations -> train=5 val=1
+2026-06-18 11:34:10,321 | src.data_handling.data_loader | INFO | Label 10: 6 simulations -> train=5 val=1
+2026-06-18 11:34:10,323 | src.data_handling.data_loader | INFO | Label 11: 6 simulations -> train=5 val=1
+2026-06-18 11:34:10,325 | src.data_handling.data_loader | INFO | Label 12: 6 simulations -> train=5 val=1
+2026-06-18 11:34:10,327 | src.data_handling.data_loader | INFO | Label 13: 6 simulations -> train=5 val=1
+2026-06-18 11:34:10,329 | src.data_handling.data_loader | INFO | Label 14: 6 simulations -> train=5 val=1
+2026-06-18 11:34:10,331 | src.data_handling.data_loader | INFO | Label 15: 6 simulations -> train=5 val=1
+2026-06-18 11:34:10,333 | src.data_handling.data_loader | INFO | Label 16: 6 simulations -> train=5 val=1
+2026-06-18 11:34:10,335 | src.data_handling.data_loader | INFO | Label 17: 6 simulations -> train=5 val=1
+2026-06-18 11:34:10,337 | src.data_handling.data_loader | INFO | Label 18: 6 simulations -> train=5 val=1
+2026-06-18 11:34:10,339 | src.data_handling.data_loader | INFO | Label 19: 6 simulations -> train=5 val=1
+2026-06-18 11:34:10,340 | src.data_handling.data_loader | INFO | Label 20: 6 simulations -> train=5 val=1
+2026-06-18 11:34:10,350 | src.data_handling.data_loader | INFO | Split complete. Train shape=(50000, 55) | Validation shape=(10000, 55)
+2026-06-18 11:36:20,371 | root | INFO | Picking simulations...
+2026-06-18 11:36:20,800 | src.data_handling.data_loader | INFO | Selected 120 simulation IDs from 500 available in TEP_FaultFree_Training_Proc.csv.
+2026-06-18 11:36:29,083 | src.data_handling.data_loader | INFO | Selected 6 simulation IDs from 500 available in TEP_Faulty_Training_Proc.csv.
+2026-06-18 11:36:29,083 | root | INFO | Loading the selected simulations...
+2026-06-18 11:36:29,083 | src.data_handling.data_loader | INFO | Loading TEP_FaultFree_Training_Proc.csv (120 simulations)
+2026-06-18 11:36:30,232 | src.data_handling.data_loader | INFO | Loaded 60000 rows from TEP_FaultFree_Training_Proc.csv
+2026-06-18 11:36:30,235 | src.data_handling.data_loader | INFO | Loading TEP_Faulty_Training_Proc.csv (6 simulations)
+2026-06-18 11:36:51,722 | src.data_handling.data_loader | INFO | Loaded 60000 rows from TEP_Faulty_Training_Proc.csv
+2026-06-18 11:36:51,723 | root | INFO | Done! FF_Train Shape: (60000, 55)
+2026-06-18 11:36:51,723 | root | INFO | Done! FA_Train Shape: (60000, 55)
+2026-06-18 11:36:51,734 | src.data_handling.data_loader | INFO | Splitting dataset into train and validation sets (val_ratio=0.20)
+2026-06-18 11:36:51,743 | src.data_handling.data_loader | INFO | Label 0: 120 simulations -> train=96 val=24
+2026-06-18 11:36:51,753 | src.data_handling.data_loader | INFO | Label 1: 6 simulations -> train=5 val=1
+2026-06-18 11:36:51,755 | src.data_handling.data_loader | INFO | Label 2: 6 simulations -> train=5 val=1
+2026-06-18 11:36:51,757 | src.data_handling.data_loader | INFO | Label 3: 6 simulations -> train=5 val=1
+2026-06-18 11:36:51,759 | src.data_handling.data_loader | INFO | Label 4: 6 simulations -> train=5 val=1
+2026-06-18 11:36:51,762 | src.data_handling.data_loader | INFO | Label 5: 6 simulations -> train=5 val=1
+2026-06-18 11:36:51,764 | src.data_handling.data_loader | INFO | Label 6: 6 simulations -> train=5 val=1
+2026-06-18 11:36:51,767 | src.data_handling.data_loader | INFO | Label 7: 6 simulations -> train=5 val=1
+2026-06-18 11:36:51,769 | src.data_handling.data_loader | INFO | Label 8: 6 simulations -> train=5 val=1
+2026-06-18 11:36:51,771 | src.data_handling.data_loader | INFO | Label 9: 6 simulations -> train=5 val=1
+2026-06-18 11:36:51,773 | src.data_handling.data_loader | INFO | Label 10: 6 simulations -> train=5 val=1
+2026-06-18 11:36:51,775 | src.data_handling.data_loader | INFO | Label 11: 6 simulations -> train=5 val=1
+2026-06-18 11:36:51,778 | src.data_handling.data_loader | INFO | Label 12: 6 simulations -> train=5 val=1
+2026-06-18 11:36:51,780 | src.data_handling.data_loader | INFO | Label 13: 6 simulations -> train=5 val=1
+2026-06-18 11:36:51,782 | src.data_handling.data_loader | INFO | Label 14: 6 simulations -> train=5 val=1
+2026-06-18 11:36:51,785 | src.data_handling.data_loader | INFO | Label 15: 6 simulations -> train=5 val=1
+2026-06-18 11:36:51,787 | src.data_handling.data_loader | INFO | Label 16: 6 simulations -> train=5 val=1
+2026-06-18 11:36:51,789 | src.data_handling.data_loader | INFO | Label 17: 6 simulations -> train=5 val=1
+2026-06-18 11:36:51,791 | src.data_handling.data_loader | INFO | Label 18: 6 simulations -> train=5 val=1
+2026-06-18 11:36:51,793 | src.data_handling.data_loader | INFO | Label 19: 6 simulations -> train=5 val=1
+2026-06-18 11:36:51,795 | src.data_handling.data_loader | INFO | Label 20: 6 simulations -> train=5 val=1
+2026-06-18 11:36:51,810 | src.data_handling.data_loader | INFO | Split complete. Train shape=(98000, 55) | Validation shape=(22000, 55)
+2026-06-18 11:38:37,520 | root | INFO | Picking simulations...
+2026-06-18 11:38:37,943 | src.data_handling.data_loader | INFO | Selected 120 simulation IDs from 500 available in TEP_FaultFree_Training_Proc.csv.
+2026-06-18 11:38:46,275 | src.data_handling.data_loader | INFO | Selected 6 simulation IDs from 500 available in TEP_Faulty_Training_Proc.csv.
+2026-06-18 11:38:46,275 | root | INFO | Loading the selected simulations...
+2026-06-18 11:38:46,275 | src.data_handling.data_loader | INFO | Loading TEP_FaultFree_Training_Proc.csv (120 simulations)
+2026-06-18 11:38:47,452 | src.data_handling.data_loader | INFO | Loaded 60000 rows from TEP_FaultFree_Training_Proc.csv
+2026-06-18 11:38:47,454 | src.data_handling.data_loader | INFO | Loading TEP_Faulty_Training_Proc.csv (6 simulations)
+2026-06-18 11:39:08,424 | src.data_handling.data_loader | INFO | Loaded 60000 rows from TEP_Faulty_Training_Proc.csv
+2026-06-18 11:39:08,425 | root | INFO | Done! FF_Train Shape: (60000, 55)
+2026-06-18 11:39:08,425 | root | INFO | Done! FA_Train Shape: (60000, 55)
+2026-06-18 11:39:08,435 | src.data_handling.data_loader | INFO | Splitting dataset into train and validation sets (val_ratio=0.20)
+2026-06-18 11:39:08,445 | src.data_handling.data_loader | INFO | Label 0: 120 simulations -> train=96 val=24
+2026-06-18 11:39:08,455 | src.data_handling.data_loader | INFO | Label 1: 6 simulations -> train=5 val=1
+2026-06-18 11:39:08,457 | src.data_handling.data_loader | INFO | Label 2: 6 simulations -> train=5 val=1
+2026-06-18 11:39:08,459 | src.data_handling.data_loader | INFO | Label 3: 6 simulations -> train=5 val=1
+2026-06-18 11:39:08,462 | src.data_handling.data_loader | INFO | Label 4: 6 simulations -> train=5 val=1
+2026-06-18 11:39:08,464 | src.data_handling.data_loader | INFO | Label 5: 6 simulations -> train=5 val=1
+2026-06-18 11:39:08,466 | src.data_handling.data_loader | INFO | Label 6: 6 simulations -> train=5 val=1
+2026-06-18 11:39:08,470 | src.data_handling.data_loader | INFO | Label 7: 6 simulations -> train=5 val=1
+2026-06-18 11:39:08,471 | src.data_handling.data_loader | INFO | Label 8: 6 simulations -> train=5 val=1
+2026-06-18 11:39:08,473 | src.data_handling.data_loader | INFO | Label 9: 6 simulations -> train=5 val=1
+2026-06-18 11:39:08,476 | src.data_handling.data_loader | INFO | Label 10: 6 simulations -> train=5 val=1
+2026-06-18 11:39:08,478 | src.data_handling.data_loader | INFO | Label 11: 6 simulations -> train=5 val=1
+2026-06-18 11:39:08,480 | src.data_handling.data_loader | INFO | Label 12: 6 simulations -> train=5 val=1
+2026-06-18 11:39:08,482 | src.data_handling.data_loader | INFO | Label 13: 6 simulations -> train=5 val=1
+2026-06-18 11:39:08,485 | src.data_handling.data_loader | INFO | Label 14: 6 simulations -> train=5 val=1
+2026-06-18 11:39:08,488 | src.data_handling.data_loader | INFO | Label 15: 6 simulations -> train=5 val=1
+2026-06-18 11:39:08,489 | src.data_handling.data_loader | INFO | Label 16: 6 simulations -> train=5 val=1
+2026-06-18 11:39:08,491 | src.data_handling.data_loader | INFO | Label 17: 6 simulations -> train=5 val=1
+2026-06-18 11:39:08,493 | src.data_handling.data_loader | INFO | Label 18: 6 simulations -> train=5 val=1
+2026-06-18 11:39:08,496 | src.data_handling.data_loader | INFO | Label 19: 6 simulations -> train=5 val=1
+2026-06-18 11:39:08,498 | src.data_handling.data_loader | INFO | Label 20: 6 simulations -> train=5 val=1
+2026-06-18 11:39:08,512 | src.data_handling.data_loader | INFO | Split complete. Train shape=(98000, 55) | Validation shape=(22000, 55)
+2026-06-18 11:45:00,932 | root | INFO | Picking simulations...
+2026-06-18 11:45:01,375 | src.data_handling.data_loader | INFO | Selected 120 simulation IDs from 500 available in TEP_FaultFree_Training_Proc.csv.
+2026-06-18 11:45:09,617 | src.data_handling.data_loader | INFO | Selected 6 simulation IDs from 500 available in TEP_Faulty_Training_Proc.csv.
+2026-06-18 11:45:09,617 | root | INFO | Loading the selected simulations...
+2026-06-18 11:45:09,617 | src.data_handling.data_loader | INFO | Loading TEP_FaultFree_Training_Proc.csv (120 simulations)
+2026-06-18 11:45:10,803 | src.data_handling.data_loader | INFO | Loaded 60000 rows from TEP_FaultFree_Training_Proc.csv
+2026-06-18 11:45:10,805 | src.data_handling.data_loader | INFO | Loading TEP_Faulty_Training_Proc.csv (6 simulations)
+2026-06-18 11:45:31,906 | src.data_handling.data_loader | INFO | Loaded 60000 rows from TEP_Faulty_Training_Proc.csv
+2026-06-18 11:45:31,907 | root | INFO | Done! FF_Train Shape: (60000, 55)
+2026-06-18 11:45:31,907 | root | INFO | Done! FA_Train Shape: (60000, 55)
+2026-06-18 11:45:31,918 | src.data_handling.data_loader | INFO | Splitting dataset into train and validation sets (val_ratio=0.20)
+2026-06-18 11:45:31,926 | src.data_handling.data_loader | INFO | Label 0: 120 simulations -> train=96 val=24
+2026-06-18 11:45:31,936 | src.data_handling.data_loader | INFO | Label 1: 6 simulations -> train=5 val=1
+2026-06-18 11:45:31,938 | src.data_handling.data_loader | INFO | Label 2: 6 simulations -> train=5 val=1
+2026-06-18 11:45:31,940 | src.data_handling.data_loader | INFO | Label 3: 6 simulations -> train=5 val=1
+2026-06-18 11:45:31,943 | src.data_handling.data_loader | INFO | Label 4: 6 simulations -> train=5 val=1
+2026-06-18 11:45:31,945 | src.data_handling.data_loader | INFO | Label 5: 6 simulations -> train=5 val=1
+2026-06-18 11:45:31,947 | src.data_handling.data_loader | INFO | Label 6: 6 simulations -> train=5 val=1
+2026-06-18 11:45:31,949 | src.data_handling.data_loader | INFO | Label 7: 6 simulations -> train=5 val=1
+2026-06-18 11:45:31,952 | src.data_handling.data_loader | INFO | Label 8: 6 simulations -> train=5 val=1
+2026-06-18 11:45:31,954 | src.data_handling.data_loader | INFO | Label 9: 6 simulations -> train=5 val=1
+2026-06-18 11:45:31,956 | src.data_handling.data_loader | INFO | Label 10: 6 simulations -> train=5 val=1
+2026-06-18 11:45:31,958 | src.data_handling.data_loader | INFO | Label 11: 6 simulations -> train=5 val=1
+2026-06-18 11:45:31,960 | src.data_handling.data_loader | INFO | Label 12: 6 simulations -> train=5 val=1
+2026-06-18 11:45:31,962 | src.data_handling.data_loader | INFO | Label 13: 6 simulations -> train=5 val=1
+2026-06-18 11:45:31,964 | src.data_handling.data_loader | INFO | Label 14: 6 simulations -> train=5 val=1
+2026-06-18 11:45:31,966 | src.data_handling.data_loader | INFO | Label 15: 6 simulations -> train=5 val=1
+2026-06-18 11:45:31,969 | src.data_handling.data_loader | INFO | Label 16: 6 simulations -> train=5 val=1
+2026-06-18 11:45:31,971 | src.data_handling.data_loader | INFO | Label 17: 6 simulations -> train=5 val=1
+2026-06-18 11:45:31,973 | src.data_handling.data_loader | INFO | Label 18: 6 simulations -> train=5 val=1
+2026-06-18 11:45:31,976 | src.data_handling.data_loader | INFO | Label 19: 6 simulations -> train=5 val=1
+2026-06-18 11:45:31,978 | src.data_handling.data_loader | INFO | Label 20: 6 simulations -> train=5 val=1
+2026-06-18 11:45:31,993 | src.data_handling.data_loader | INFO | Split complete. Train shape=(98000, 55) | Validation shape=(22000, 55)
+2026-06-18 11:45:32,039 | root | INFO | X_train Shape: (98000, 52)
+2026-06-18 11:45:32,040 | root | INFO | y_train Shape: (98000,)
+2026-06-18 11:51:58,936 | root | INFO | Picking simulations...
+2026-06-18 11:51:59,364 | src.data_handling.data_loader | INFO | Selected 120 simulation IDs from 500 available in TEP_FaultFree_Training_Proc.csv.
+2026-06-18 11:52:07,915 | src.data_handling.data_loader | INFO | Selected 6 simulation IDs from 500 available in TEP_Faulty_Training_Proc.csv.
+2026-06-18 11:52:07,915 | root | INFO | Loading the selected simulations...
+2026-06-18 11:52:07,915 | src.data_handling.data_loader | INFO | Loading TEP_FaultFree_Training_Proc.csv (120 simulations)
+2026-06-18 11:52:09,106 | src.data_handling.data_loader | INFO | Loaded 60000 rows from TEP_FaultFree_Training_Proc.csv
+2026-06-18 11:52:09,106 | src.data_handling.data_loader | INFO | Loading TEP_Faulty_Training_Proc.csv (6 simulations)
+2026-06-18 11:52:31,072 | src.data_handling.data_loader | INFO | Loaded 60000 rows from TEP_Faulty_Training_Proc.csv
+2026-06-18 11:52:31,075 | root | INFO | Done! FF_Train Shape: (60000, 55)
+2026-06-18 11:52:31,075 | root | INFO | Done! FA_Train Shape: (60000, 55)
+2026-06-18 11:52:31,087 | src.data_handling.data_loader | INFO | Splitting dataset into train and validation sets (val_ratio=0.20)
+2026-06-18 11:52:31,099 | src.data_handling.data_loader | INFO | Label 0: 120 simulations -> train=96 val=24
+2026-06-18 11:52:31,108 | src.data_handling.data_loader | INFO | Label 1: 6 simulations -> train=5 val=1
+2026-06-18 11:52:31,111 | src.data_handling.data_loader | INFO | Label 2: 6 simulations -> train=5 val=1
+2026-06-18 11:52:31,113 | src.data_handling.data_loader | INFO | Label 3: 6 simulations -> train=5 val=1
+2026-06-18 11:52:31,116 | src.data_handling.data_loader | INFO | Label 4: 6 simulations -> train=5 val=1
+2026-06-18 11:52:31,118 | src.data_handling.data_loader | INFO | Label 5: 6 simulations -> train=5 val=1
+2026-06-18 11:52:31,120 | src.data_handling.data_loader | INFO | Label 6: 6 simulations -> train=5 val=1
+2026-06-18 11:52:31,122 | src.data_handling.data_loader | INFO | Label 7: 6 simulations -> train=5 val=1
+2026-06-18 11:52:31,125 | src.data_handling.data_loader | INFO | Label 8: 6 simulations -> train=5 val=1
+2026-06-18 11:52:31,127 | src.data_handling.data_loader | INFO | Label 9: 6 simulations -> train=5 val=1
+2026-06-18 11:52:31,129 | src.data_handling.data_loader | INFO | Label 10: 6 simulations -> train=5 val=1
+2026-06-18 11:52:31,132 | src.data_handling.data_loader | INFO | Label 11: 6 simulations -> train=5 val=1
+2026-06-18 11:52:31,134 | src.data_handling.data_loader | INFO | Label 12: 6 simulations -> train=5 val=1
+2026-06-18 11:52:31,136 | src.data_handling.data_loader | INFO | Label 13: 6 simulations -> train=5 val=1
+2026-06-18 11:52:31,138 | src.data_handling.data_loader | INFO | Label 14: 6 simulations -> train=5 val=1
+2026-06-18 11:52:31,140 | src.data_handling.data_loader | INFO | Label 15: 6 simulations -> train=5 val=1
+2026-06-18 11:52:31,142 | src.data_handling.data_loader | INFO | Label 16: 6 simulations -> train=5 val=1
+2026-06-18 11:52:31,145 | src.data_handling.data_loader | INFO | Label 17: 6 simulations -> train=5 val=1
+2026-06-18 11:52:31,146 | src.data_handling.data_loader | INFO | Label 18: 6 simulations -> train=5 val=1
+2026-06-18 11:52:31,150 | src.data_handling.data_loader | INFO | Label 19: 6 simulations -> train=5 val=1
+2026-06-18 11:52:31,152 | src.data_handling.data_loader | INFO | Label 20: 6 simulations -> train=5 val=1
+2026-06-18 11:52:31,167 | src.data_handling.data_loader | INFO | Split complete. Train shape=(98000, 55) | Validation shape=(22000, 55)
+2026-06-18 11:52:31,178 | root | INFO | X_train Shape: (98000, 52)
+2026-06-18 11:52:31,178 | root | INFO | y_train Shape: (98000,)
+2026-06-18 11:52:31,178 | root | INFO | Training Random Forest...
+2026-06-18 11:55:03,989 | root | INFO | Making predictions...
+2026-06-18 11:57:54,599 | root | INFO | Picking simulations...
+2026-06-18 11:57:55,021 | src.data_handling.data_loader | INFO | Selected 120 simulation IDs from 500 available in TEP_FaultFree_Training_Proc.csv.
+2026-06-18 11:58:03,272 | src.data_handling.data_loader | INFO | Selected 6 simulation IDs from 500 available in TEP_Faulty_Training_Proc.csv.
+2026-06-18 11:58:03,272 | root | INFO | Loading the selected simulations...
+2026-06-18 11:58:03,272 | src.data_handling.data_loader | INFO | Loading TEP_FaultFree_Training_Proc.csv (120 simulations)
+2026-06-18 11:58:04,453 | src.data_handling.data_loader | INFO | Loaded 60000 rows from TEP_FaultFree_Training_Proc.csv
+2026-06-18 11:58:04,454 | src.data_handling.data_loader | INFO | Loading TEP_Faulty_Training_Proc.csv (6 simulations)
+2026-06-18 11:58:26,501 | src.data_handling.data_loader | INFO | Loaded 60000 rows from TEP_Faulty_Training_Proc.csv
+2026-06-18 11:58:26,505 | root | INFO | Done! FF_Train Shape: (60000, 55)
+2026-06-18 11:58:26,505 | root | INFO | Done! FA_Train Shape: (60000, 55)
+2026-06-18 11:58:26,517 | src.data_handling.data_loader | INFO | Splitting dataset into train and validation sets (val_ratio=0.20)
+2026-06-18 11:58:26,529 | src.data_handling.data_loader | INFO | Label 0: 120 simulations -> train=96 val=24
+2026-06-18 11:58:26,538 | src.data_handling.data_loader | INFO | Label 1: 6 simulations -> train=5 val=1
+2026-06-18 11:58:26,541 | src.data_handling.data_loader | INFO | Label 2: 6 simulations -> train=5 val=1
+2026-06-18 11:58:26,543 | src.data_handling.data_loader | INFO | Label 3: 6 simulations -> train=5 val=1
+2026-06-18 11:58:26,546 | src.data_handling.data_loader | INFO | Label 4: 6 simulations -> train=5 val=1
+2026-06-18 11:58:26,548 | src.data_handling.data_loader | INFO | Label 5: 6 simulations -> train=5 val=1
+2026-06-18 11:58:26,550 | src.data_handling.data_loader | INFO | Label 6: 6 simulations -> train=5 val=1
+2026-06-18 11:58:26,553 | src.data_handling.data_loader | INFO | Label 7: 6 simulations -> train=5 val=1
+2026-06-18 11:58:26,555 | src.data_handling.data_loader | INFO | Label 8: 6 simulations -> train=5 val=1
+2026-06-18 11:58:26,558 | src.data_handling.data_loader | INFO | Label 9: 6 simulations -> train=5 val=1
+2026-06-18 11:58:26,560 | src.data_handling.data_loader | INFO | Label 10: 6 simulations -> train=5 val=1
+2026-06-18 11:58:26,562 | src.data_handling.data_loader | INFO | Label 11: 6 simulations -> train=5 val=1
+2026-06-18 11:58:26,565 | src.data_handling.data_loader | INFO | Label 12: 6 simulations -> train=5 val=1
+2026-06-18 11:58:26,567 | src.data_handling.data_loader | INFO | Label 13: 6 simulations -> train=5 val=1
+2026-06-18 11:58:26,569 | src.data_handling.data_loader | INFO | Label 14: 6 simulations -> train=5 val=1
+2026-06-18 11:58:26,572 | src.data_handling.data_loader | INFO | Label 15: 6 simulations -> train=5 val=1
+2026-06-18 11:58:26,574 | src.data_handling.data_loader | INFO | Label 16: 6 simulations -> train=5 val=1
+2026-06-18 11:58:26,576 | src.data_handling.data_loader | INFO | Label 17: 6 simulations -> train=5 val=1
+2026-06-18 11:58:26,579 | src.data_handling.data_loader | INFO | Label 18: 6 simulations -> train=5 val=1
+2026-06-18 11:58:26,582 | src.data_handling.data_loader | INFO | Label 19: 6 simulations -> train=5 val=1
+2026-06-18 11:58:26,584 | src.data_handling.data_loader | INFO | Label 20: 6 simulations -> train=5 val=1
+2026-06-18 11:58:26,599 | src.data_handling.data_loader | INFO | Split complete. Train shape=(98000, 55) | Validation shape=(22000, 55)
+2026-06-18 11:58:26,612 | root | INFO | X_train Shape: (98000, 52)
+2026-06-18 11:58:26,612 | root | INFO | y_train Shape: (98000,)
+2026-06-18 11:58:26,612 | root | INFO | Training Random Forest...
+2026-06-18 12:00:58,201 | root | INFO | Making predictions...

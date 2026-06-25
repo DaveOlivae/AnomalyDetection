@@ -1,0 +1,18 @@
+2026-06-11 13:39:22,481 | __main__ | INFO | Starting FAST experiment: 20260610_finetuning_xgboost_fast
+2026-06-11 13:39:22,482 | __main__ | INFO | Trials: 12 | CV: 2-fold | Subsample: 20000 | Early stopping: 30 rounds
+2026-06-11 13:39:22,482 | src.data_handling.make_dataset | INFO | Loading window dataset from /home/davideoliveira/Programming/AIProjects/AnomalyDetection/data/final/train.npz
+2026-06-11 13:39:22,583 | src.data_handling.make_dataset | INFO | Loaded split successfully | X=(19012, 208) | y=(19012,)
+2026-06-11 13:39:22,658 | src.data_handling.make_dataset | INFO | Loading window dataset from /home/davideoliveira/Programming/AIProjects/AnomalyDetection/data/final/val.npz
+2026-06-11 13:39:22,677 | src.data_handling.make_dataset | INFO | Loaded split successfully | X=(4268, 208) | y=(4268,)
+2026-06-11 13:39:22,696 | src.data_handling.make_dataset | INFO | Loading window dataset from /home/davideoliveira/Programming/AIProjects/AnomalyDetection/data/final/test.npz
+2026-06-11 13:39:22,790 | src.data_handling.make_dataset | INFO | Loaded split successfully | X=(22680, 208) | y=(22680,)
+2026-06-11 13:39:22,879 | __main__ | INFO | Train: X=(19012, 208) | y=(19012,)
+2026-06-11 13:39:22,879 | __main__ | INFO | Validation: X=(4268, 208) | y=(4268,)
+2026-06-11 13:39:22,879 | __main__ | INFO | Test: X=(22680, 208) | y=(22680,)
+2026-06-11 13:39:22,880 | __main__ | INFO | Running Optuna study...
+2026-06-11 13:42:32,622 | __main__ | INFO | Search done in 3.2 min
+2026-06-11 13:42:32,626 | __main__ | INFO | Saved trials: /home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/20260610_finetuning_xgboost_fast/reports/optuna_trials.csv
+2026-06-11 13:42:32,628 | __main__ | INFO | Retraining on full training set (19012 samples)...
+2026-06-11 13:42:49,285 | __main__ | INFO | Finished in 3.4 min | best_cv_f1=0.9636 | val_f1=0.8335 | test_f1=0.7786
+2026-06-11 13:42:49,285 | __main__ | INFO | Saved model: /home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/20260610_finetuning_xgboost_fast/models/xgboost_best.joblib
+2026-06-11 13:42:49,285 | __main__ | INFO | Saved study: /home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/20260610_finetuning_xgboost_fast/models/xgboost_optuna_study.joblib

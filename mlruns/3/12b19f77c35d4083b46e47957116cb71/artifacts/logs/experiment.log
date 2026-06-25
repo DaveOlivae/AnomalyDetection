@@ -1,0 +1,43 @@
+2026-06-22 16:08:42,510 | src.data_handling.data_loader | INFO | Loading binary TEP dataset using random_state=42
+2026-06-22 16:08:42,986 | src.data_handling.data_loader | INFO | Selected 120 simulation IDs from 500 available in TEP_FaultFree_Training_Proc.csv.
+2026-06-22 16:08:54,844 | src.data_handling.data_loader | INFO | Selected 6 simulation IDs from 500 available in TEP_Faulty_Training_Proc.csv.
+2026-06-22 16:08:54,844 | src.data_handling.data_loader | INFO | Loading TEP_FaultFree_Training_Proc.csv (120 simulations)
+2026-06-22 16:08:56,912 | src.data_handling.data_loader | INFO | Loaded 60000 rows from TEP_FaultFree_Training_Proc.csv
+2026-06-22 16:08:56,915 | src.data_handling.data_loader | INFO | Loading TEP_Faulty_Training_Proc.csv (6 simulations)
+2026-06-22 16:09:35,092 | src.data_handling.data_loader | INFO | Loaded 60000 rows from TEP_Faulty_Training_Proc.csv
+2026-06-22 16:09:35,106 | src.data_handling.data_loader | INFO | Train/validation dataset shape=(120000, 56)
+2026-06-22 16:09:35,106 | src.data_handling.data_loader | INFO | Identified 52 feature columns
+2026-06-22 16:09:35,106 | src.data_handling.data_loader | INFO | Using 52 feature columns
+2026-06-22 16:09:35,106 | src.data_handling.data_loader | INFO | Splitting dataset into train and validation sets (val_ratio=0.20)
+2026-06-22 16:09:35,123 | src.data_handling.data_loader | INFO | Label 0: 120 simulations -> train=96 val=24
+2026-06-22 16:09:35,149 | src.data_handling.data_loader | INFO | Label 1: 6 simulations -> train=5 val=1
+2026-06-22 16:09:35,181 | src.data_handling.data_loader | INFO | Split complete. Train shape=(98000, 56) | Validation shape=(22000, 56)
+2026-06-22 16:09:35,181 | src.data_handling.data_loader | INFO | Train shape=(98000, 56) | Validation shape=(22000, 56)
+2026-06-22 16:09:36,307 | src.data_handling.data_loader | INFO | Selected 60 simulation IDs from 500 available in TEP_FaultFree_Testing_Proc.csv.
+2026-06-22 16:10:04,081 | src.data_handling.data_loader | INFO | Selected 3 simulation IDs from 500 available in TEP_Faulty_Testing_Proc.csv.
+2026-06-22 16:10:04,081 | src.data_handling.data_loader | INFO | Loading TEP_FaultFree_Testing_Proc.csv (60 simulations)
+2026-06-22 16:10:07,564 | src.data_handling.data_loader | INFO | Loaded 57600 rows from TEP_FaultFree_Testing_Proc.csv
+2026-06-22 16:10:07,564 | src.data_handling.data_loader | INFO | Loading TEP_Faulty_Testing_Proc.csv (3 simulations)
+2026-06-22 16:11:19,452 | src.data_handling.data_loader | INFO | Loaded 57600 rows from TEP_Faulty_Testing_Proc.csv
+2026-06-22 16:11:19,466 | src.data_handling.data_loader | INFO | Test shape=(115200, 56)
+2026-06-22 16:11:19,466 | src.data_handling.data_loader | INFO | Dataset loading pipeline completed successfully
+2026-06-22 16:11:19,497 | src.data_handling.create_windows | INFO | Building windows: mode=stats | window_size=20 | stride=5
+2026-06-22 16:11:19,497 | src.data_handling.create_windows | INFO | Input dataframe shape=(98000, 56)
+2026-06-22 16:11:19,501 | src.data_handling.create_windows | INFO | Found 196 simulation groups
+2026-06-22 16:11:20,864 | src.data_handling.create_windows | INFO | Window dataset shape=(19012, 208)
+2026-06-22 16:11:20,864 | src.data_handling.create_windows | INFO | Generated 19012 windows with 208 features
+2026-06-22 16:11:20,864 | src.data_handling.create_windows | INFO | Class distribution: normal=9312 anomalous=9700
+2026-06-22 16:11:20,865 | src.data_handling.create_windows | INFO | Building windows: mode=stats | window_size=20 | stride=5
+2026-06-22 16:11:20,865 | src.data_handling.create_windows | INFO | Input dataframe shape=(22000, 56)
+2026-06-22 16:11:20,866 | src.data_handling.create_windows | INFO | Found 44 simulation groups
+2026-06-22 16:11:21,198 | src.data_handling.create_windows | INFO | Window dataset shape=(4268, 208)
+2026-06-22 16:11:21,199 | src.data_handling.create_windows | INFO | Generated 4268 windows with 208 features
+2026-06-22 16:11:21,199 | src.data_handling.create_windows | INFO | Class distribution: normal=2328 anomalous=1940
+2026-06-22 16:11:21,199 | src.data_handling.create_windows | INFO | Building windows: mode=stats | window_size=20 | stride=5
+2026-06-22 16:11:21,199 | src.data_handling.create_windows | INFO | Input dataframe shape=(115200, 56)
+2026-06-22 16:11:21,202 | src.data_handling.create_windows | INFO | Found 120 simulation groups
+2026-06-22 16:11:23,092 | src.data_handling.create_windows | INFO | Window dataset shape=(22680, 208)
+2026-06-22 16:11:23,092 | src.data_handling.create_windows | INFO | Generated 22680 windows with 208 features
+2026-06-22 16:11:23,093 | src.data_handling.create_windows | INFO | Class distribution: normal=11340 anomalous=11340
+2026-06-22 16:11:23,267 | root | INFO | Training Random Forest...
+2026-06-22 16:11:38,764 | root | INFO | Evaluating Random Forest...

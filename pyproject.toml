@@ -24,6 +24,7 @@ seaborn = "^0.13"
 jupyter = "^1.0"
 ipykernel = "^6.29"
 mlflow = "^3.12.0"
+optuna = "^4.9.0"
 
 [tool.poetry.scripts]
 tep-process = "src.cli.process_tep:main"

@@ -1,0 +1,18 @@
+2026-06-11 00:58:32,835 | __main__ | INFO | Starting experiment: 20260610_finetuning_all_models
+2026-06-11 00:58:32,835 | __main__ | INFO | Models to run: ['lightgbm', 'random_forest', 'xgboost']
+2026-06-11 00:58:32,835 | __main__ | INFO | Data directory: /home/davideoliveira/Programming/AIProjects/AnomalyDetection/data/final
+2026-06-11 00:58:32,835 | __main__ | INFO | Output directory: /home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/20260610_finetuning_all_models
+2026-06-11 00:58:32,835 | src.data_handling.make_dataset | INFO | Loading window dataset from /home/davideoliveira/Programming/AIProjects/AnomalyDetection/data/final/train.npz
+2026-06-11 00:58:32,918 | src.data_handling.make_dataset | INFO | Loaded split successfully | X=(19012, 208) | y=(19012,)
+2026-06-11 00:58:32,986 | src.data_handling.make_dataset | INFO | Loading window dataset from /home/davideoliveira/Programming/AIProjects/AnomalyDetection/data/final/val.npz
+2026-06-11 00:58:33,007 | src.data_handling.make_dataset | INFO | Loaded split successfully | X=(4268, 208) | y=(4268,)
+2026-06-11 00:58:33,025 | src.data_handling.make_dataset | INFO | Loading window dataset from /home/davideoliveira/Programming/AIProjects/AnomalyDetection/data/final/test.npz
+2026-06-11 00:58:33,120 | src.data_handling.make_dataset | INFO | Loaded split successfully | X=(22680, 208) | y=(22680,)
+2026-06-11 00:58:33,201 | __main__ | INFO | Train: X=(19012, 208) | y=(19012,)
+2026-06-11 00:58:33,201 | __main__ | INFO | Validation: X=(4268, 208) | y=(4268,)
+2026-06-11 00:58:33,201 | __main__ | INFO | Test: X=(22680, 208) | y=(22680,)
+2026-06-11 00:58:33,202 | __main__ | INFO | Saved experiment config: /home/davideoliveira/Programming/AIProjects/AnomalyDetection/outputs/20260610_finetuning_all_models/reports/experiment_config.json
+2026-06-11 00:58:33,202 | __main__ | INFO | ============================================================
+2026-06-11 00:58:33,202 | __main__ | INFO | Starting Optuna finetuning: LIGHTGBM
+2026-06-11 00:58:33,202 | __main__ | INFO | ============================================================
+2026-06-11 00:58:33,202 | __main__ | INFO | [lightgbm] Running Optuna study — 60 trials | 3-fold CV

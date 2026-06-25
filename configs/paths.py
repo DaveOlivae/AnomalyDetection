@@ -17,9 +17,32 @@ FINAL_DATA_DIR = DATA_DIR / "final"
 
 # output dirs
 OUTPUTS_DIR = ROOT_DIR / "outputs"
-MODELS_DIR = OUTPUTS_DIR / "models"
-REPORTS_DIR = OUTPUTS_DIR / "reports"
-LOGS_DIR = OUTPUTS_DIR / "logs"
+
+def create_output_dirs(experiment_name: str) -> None:
+    """
+    Creates output directories for a given experiment.
+    """
+    experiment_output_dir = OUTPUTS_DIR / experiment_name
+    for output_dir in [
+        experiment_output_dir,
+        experiment_output_dir / "models",
+        experiment_output_dir / "reports",
+        experiment_output_dir / "reports" / "validation",
+        experiment_output_dir / "reports" / "test",
+        experiment_output_dir / "logs",
+    ]:
+        output_dir.mkdir(parents=True, exist_ok=True)
+
+    paths = {
+        "experiment_output_dir": experiment_output_dir,
+        "models_dir": experiment_output_dir / "models",
+        "reports_dir": experiment_output_dir / "reports",
+        "validation_reports_dir": experiment_output_dir / "reports" / "validation",
+        "test_reports_dir": experiment_output_dir / "reports" / "test",
+        "logs_dir": experiment_output_dir / "logs",
+    }
+    
+    return paths
 
 # tep files
 FAULT_FREE_TRAIN = RAW_DATA_DIR / "TEP_FaultFree_Training.csv"
@@ -35,10 +58,10 @@ PROCESSED_FF_TEST = PROCESSED_DATA_DIR / "TEP_FaultFree_Testing_Proc.csv"
 PROCESSED_FA_TEST = PROCESSED_DATA_DIR / "TEP_Faulty_Testing_Proc.csv"
 
 
-def ensure_project_dirs():
-    """
-    Checks to ensure all project directories exist, and creates them if they don't.
-    """
-
-    for path in [RAW_DATA_DIR, PROCESSED_DATA_DIR, FINAL_DATA_DIR, MODELS_DIR, LOGS_DIR, REPORTS_DIR]:
-        path.mkdir(parents=True, exist_ok=True)
+#def ensure_project_dirs():
+#    """
+#    Checks to ensure all project directories exist, and creates them if they don't.
+#    """
+#
+#    for path in [RAW_DATA_DIR, PROCESSED_DATA_DIR, FINAL_DATA_DIR, MODELS_DIR, LOGS_DIR, REPORTS_DIR]:
+#        path.mkdir(parents=True, exist_ok=True)
